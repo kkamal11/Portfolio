@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" id="rootElem">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Kamal Kishor Portfolio website">
+	<title>Kamal</title>
+	<!-- Fevicon -->
+	<link rel="icon" type="image/x-icon" href="./assets/fevIcon.png">
+	<!-- Tailwind CSS-->
+	<link rel="stylesheet" href="./dist/output.css">
+	<link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body class="dark:bg-gray-900">
+	<div id="app">
+		<header-comp></header-comp>
+		<transition name="fade" mode="out-in">
+			<router-view></router-view>
+		</transition>
+		<router-view name="things"></router-view>
+		<router-view name="skill"></router-view>
+		<router-view name="contact"></router-view>
+		<footer-comp id="footer"></footer-comp>
+	</div>
+	<button id="scrollBtn" class="arrow-up hidden px-2 py-1 border-2 rounded-md text-lg text-sky-400 border-sky-400  hover:border-sky-900 hover:text-sky-900 dark:text-white dark:border-white fixed bottom-4 right-4" title="Go To Top"><i class="bi bi-arrow-up text-xl"></i></button>
+	
+	<!--Bootstrap Icons  -->
+	<link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<!-- Font Awesome Icons -->
+	<link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<script src="app.js" type="module"></script>
+	<!-- vue 2 -->
+	<script src="./assets/vue.min.js"></script>
+	<!-- vue Router -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.0.0/vue-router.min.js"></script>
+	<!-- Vue-typer -->
+	<script src="https://cdn.jsdelivr.net/npm/vue-typer@1.2.0/dist/vue-typer.min.js"></script>
+</body>
+</html>
