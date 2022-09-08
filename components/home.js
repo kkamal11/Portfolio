@@ -3,16 +3,16 @@ const home = {
     template: `
     <div id="home">
         <div class="dark:text-gray-100 py-20 ">
-            <div class="grid justify-items-center sm:text-2xl lg:text-3xl lg:font-medium">
-                <p class="hover-underline-animation text-rose-100 rounded-md md:mb-2 hidden md:block">"Hello!" I am Kamal.&#128075;</p>
+            <div class="grid justify-items-center lg:text-3xl lg:font-medium">
+                <p class="text-rose-100 rounded-md p-2 md:mb-2 hidden md:block">"Hello<span class="hidden md:visible"> World</span>!" I am Kamal.&#128075;</p>
             
-                <vue-typer class="hidden italic h-10 lg:block text-center" 
+                <vue-typer class="hidden h-10 lg:block text-center" 
                 :text="fullTextArray" :repeat="Infinity"
                 erase-style='backspace' :type-delay='100'
                 :erase-delay='50' >
                 </vue-typer>
                
-                <vue-typer class="lg:hidden italic text-center text-gray-100" 
+                <vue-typer class="lg:hidden text-2xl italic text-center text-gray-100" 
                 v-bind:text="smScreenTextArray" :repeat="Infinity"
                 erase-style='clear' :type-delay='100'>
                 </vue-typer>
@@ -22,7 +22,7 @@ const home = {
                 <p class="mx-2 text-center md:mx-0 md:text-xl">I create simple yet elegant, efficient and highly interactive web apps.</p>
                 <p class="md:text-xl text-center">I am also equally passionate about data science and ML.</p>
                 <div class="grid grid-cols-2 gap-8 pt-3.5 text-lg ">
-                    <button v-if="!clickedHiring" class="card1 border-2 p-2 px-4 rounded-lg hover:border-sky-900 hover:underline hover:underline-offset-4 decoration-amber-400">Resume</button>
+                    <button @click="showResume" v-if="!clickedHiring" class="card1 border-2 p-2 px-4 rounded-lg hover:border-sky-900 hover:underline hover:underline-offset-4 decoration-amber-400">Resume</button>
                     <button v-if="!clickedHiring" v-on:click="showEmail" class="card1 border-2 rounded-lg hover:underline-offset-4 decoration-amber-400 hover:border-sky-900 hover:underline">Hire Me</button>
                     <div v-if="clickedHiring" class="col-span-2 p-2 border-2 rounded-xl hover:border-sky-900 text-white md:text-lg text-center">
                         <span><router-link :to="Contact" class="underline underline-offset-4 hover:decoration-amber-400">Contact Here&nbsp;</router-link>or drop an email at <span class="select-all underline underline-offset-4 hover:decoration-amber-400">kishorkamal7091@gmail.com</span></span>&nbsp;
@@ -44,7 +44,7 @@ const home = {
             yellowText: false,
             clickedHiring:false,
             fullTextArray: ["A Python Developer with focus on Flask + Vue.", "An aspiring data professional", "An insatiably curious and lifelong learner....", "Let's connect on LinkedIn."],
-            smScreenTextArray:["Hello, I am Kamal", "I am a Python Developer.", "and an aspiring data professional."],
+            smScreenTextArray:["Hello, I am Kamal.", "I am a Python Developer.", "and an aspiring data professional."],
         }
     },
     components:{ 
@@ -66,6 +66,9 @@ const home = {
         cancelPopUp: function(){
             this.clickedHiring = false;
         },
+        showResume: function(){
+            window.open('https://drive.google.com/drive/folders/1kDsg4LAK-E0AjJiJkKs0PYQSMg0izDc5?usp=sharing')
+        }
     },
 }
 
