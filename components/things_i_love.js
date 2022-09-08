@@ -33,7 +33,7 @@ const things = {
         </div>  
         <div class="mx-8 lg:m-14">
         <h1 class="text-4xl font-bold text-gray-700 my-6 tracking-wider dark:text-white ">Latest projects</h1>
-        <div class="grid lg:grid-cols-3 gap-x-10 md:mx-36 mb-4">
+        <div class="grid lg:grid-cols-2 gap-x-10 md:mx-36 mb-4">
             <a @mouseover="showOnHover('one')" @mouseout="one=false" href="https://github.com/kkamal11/Quantified_Self_App_v2.0" target="_blank" id="proj-card" class="block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-rose-700" >
                 <h2 class="mt-16 text-2xl text-sky-700 font-medium tracking-wider dark:text-fuchsia-50">Quantified Self App</h2>
                 <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">v2.0 Advanced</p>
@@ -45,16 +45,6 @@ const things = {
                     <p v-if="one" class="font-medium">Built using:</p>
                     <p v-if="one" class="">HTML/CSS, JavaScript, Vuejs, Tailwind CSS, Python, Flask, SQLite, Redis, Celery</p>
                     <!--<a v-if="one" href="#" class="p-2 font-medium border-2 rounded-md hover:bg-red-600 hover:text-yellow-500 dark:hover:text-yellow-500">Live Demo</a>-->
-                </div>
-            </a>
-
-            <a @mouseover="showOnHover('two')" @mouseout="two=false" href="https://github.com/kkamal11/Bike_Sales_Analysis" target="_blank" id="proj-card" class="block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-rose-700" >
-                <h2 class="mt-16 text-2xl text-sky-700 font-medium my-1 tracking-wider dark:text-fuchsia-50">Bike Sales Analysis</h2>
-                <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">A data analysis project</p>
-                <div class="mt-8 text-gray-700 dark:text-fuchsia-50">
-                    <p v-if="!two">An MS Excel project to create a dashboard to demonstrate Bike Sales Analysis. </p>
-                    <p v-if="two" class="font-medium">Built using:</p>
-                    <p v-if="two">MS Excel</p>
                 </div>
             </a>
 
