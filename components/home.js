@@ -4,7 +4,7 @@ const home = {
     <div id="home">
         <div class="dark:text-gray-100 py-20 ">
             <div class="grid justify-items-center lg:text-3xl lg:font-medium">
-                <p class="text-rose-100 rounded-md p-2 md:mb-2 hidden md:block">"Hello<span class="hidden md:visible"> World</span>!" I am Kamal.&#128075;</p>
+                <p class="text-rose-100 rounded-md p-2 md:mb-2 hidden md:block">"Hello World!" I am Kamal.&#128075;</p>
             
                 <vue-typer class="hidden h-10 lg:block text-center" 
                 :text="fullTextArray" :repeat="Infinity"
