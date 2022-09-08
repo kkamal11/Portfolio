@@ -7,7 +7,6 @@ export default{
                 <img width="200px" class="mx-auto rounded-full" src="./assets/profile-pic.png" alt="Image">
             </div>
             <h5 class="text-gray-800 mt-4 text-xl font-medium leading-tight dark:text-gray-300">Kamal Kishor Chaurasiya</h5>
-            <p class="text-sm text-gray-600 dark:text-gray-400">Python Engineer</p>
         </div>
         <div class="leading-6 text-left text-gray-800 dark:text-gray-300 mx-8 lg:mx-28 xl:mx-48 p-6 rounded-xl shadow-2xl shadow-indigo-400  dark:shadow-blue-800/50 dark:shadow-lg"  @mouseover="highlight" @mouseout="highlightText=false">
                 <div class="lg:mx-20 leading-relaxed">
