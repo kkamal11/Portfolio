@@ -4,7 +4,8 @@ const home = {
     <div id="home">
         <div class="dark:text-gray-100 py-20 ">
             <div class="grid justify-items-center sm:text-2xl lg:text-3xl lg:font-medium">
-                <p class="hover-underline-animation text-rose-100 rounded-md md:mb-2">"Hello!" I am Kamal.&#128075;</p>
+                <p class="hover-underline-animation text-rose-100 rounded-md md:mb-2 md:hidden">Hi, I am Kamal.</p>
+                <p class="hover-underline-animation text-rose-100 rounded-md md:mb-2 hidden md:visible">"Hello!" I am Kamal.&#128075;</p>
             
                 <vue-typer class="hidden italic h-10 lg:block text-center" 
                 :text="fullTextArray" :repeat="Infinity"
