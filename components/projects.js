@@ -57,13 +57,6 @@ export default{
                     imgPath:"./assets/projects/Home.png"
                 },
                 {
-                    title:"Bike Sales Analysis",
-                    description:"A simple MS Excel project to create a dashboard to demonstrate Bike Sales Analysis. The data was first cleaned by making some correction and removing duplicates. The dashboard was then created by organizing data into pivot tables.",
-                    techUsed: ["MS Excel"],
-                    Database: "",
-                    link:"https://github.com/kkamal11/Bike_Sales_Analysis"
-                },
-                {
                     title:"QuantfiedSelf App",
                     description:"A self-tracking web application where users can save and keep track of their activities and tasks. They can create, read, update and delete trackers and logs as per their requirements. Moreover, they can also visualise their progress over time graphically.",
                     techUsed: ["HTML", "CSS", "Python with Flask", "Flask_sqlalchemy", "minimal JavaScript"],
