@@ -103,32 +103,6 @@ nav,
   }
 }
 
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-}
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.hover-underline-animation:after {
-  background-color: rgb(255 228 230);
-}
-
 /* Hover Up Move */
 .card,
 .card1,
@@ -171,14 +145,6 @@ nav,
   background-image: none;
 }
 
-/* tooltip  */
-.tooltip {
-  position: relative;
-  display: block;
-  bottom: 35px;
-  left: 50px;
-}
-
 .container {
   position: relative;
 }
@@ -210,4 +176,10 @@ nav,
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 500px) {
+  .sm-screen-color{
+    background-color: rgb(26, 161, 215);
+  }
 }
