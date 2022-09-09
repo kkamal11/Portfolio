@@ -46,7 +46,7 @@ export default{
                                 <li>MS Memorial Public School</li>
                                 <li class="mt-2 font-bold tracking-wide underline underline-offset-4">Undergraduate <i class='fas fa-graduation-cap' style='font-size:16px;color:yellow'></i></li>
                                 <li>National Institute of Technology Kurukshetra, <i>B.Tech, 2019-23<span class="text-base font-normal float-right">CGPA: 8.40</span></i></li>
-                                <li>Indian Institute of Technology Madras, <i>B.Sc, 2021-Present<span class="text-base font-normal float-right">CGPA: 9.40</span></i></li>
+                                <li>Indian Institute of Technology Madras, <i>BS, 2021-2024<span class="text-base font-normal float-right">CGPA: 9.40</span></i></li>
                             </ul>
                         </div>
                         <div v-if="showList[1]" class="md:mx-12 md:px-4 p-6 bg-red-600 rounded-lg font-medium">
