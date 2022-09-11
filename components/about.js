@@ -57,6 +57,7 @@ export default{
                         <div v-if="showList[2]" class="md:mx-12 md:px-4 p-6 bg-red-600 rounded-md md:text-right font-medium">
                             <ul class="text-yellow-400">
                                 <li>Project Intern <i>SCoE, Nit Kurukshetra <span class="text-base font-normal float-right">&nbsp;&nbsp;Jan/22 to May/22</span></i></li>
+                                <li>Python Academic Mentor <i>IIT Madras <span class="text-base font-normal float-right">&nbsp;&nbsp;Aug/22 to Sep/22</span></i></li>
                             </ul>
                         </div>
                     </div>
