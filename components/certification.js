@@ -43,12 +43,12 @@ export default {
                 'Foundational level - IIT Madras': [
                     '../assets/certificates/foundationCerti.jpg',
                     'Procured this certficate after completing courses in Mathematics, Statistics and Python Programming.',
-                    'link'
+                    'https://drive.google.com/file/d/1w356baxF4SRiI19rEp2nrBZQcbvSqIi_/view?usp=sharing'
                 ],
-                'Python - HackerRank': [
-                    '../assets/certificates/python-hackerrank.png',
-                    'Procured this certficate after passing Python assessment on Hackerrank.',
-                    'https://www.hackerrank.com/certificates/91fe50949659'
+                'Python Mentor - IIT Madras': [
+                    '../assets/certificates/python_mentor.png',
+                    'Mentored and taught learners about writing codes in Python and solving problems.',
+                    'https://drive.google.com/file/d/1Aw5mT9MAodEQlPI46dwiZm5-2VRXOx9C/view?usp=sharing'
                 ],
                 'JavaScript - HackerRank': [
                     '../assets/certificates/javascriptBasic.png',
@@ -57,6 +57,11 @@ export default {
                 ],
             },
             otherCertis: {
+                'Python - HackerRank': [
+                    '../assets/certificates/python-hackerrank.png',
+                    'Procured this certficate after passing Python assessment on Hackerrank.',
+                    'https://www.hackerrank.com/certificates/91fe50949659'
+                ],
                 'SQL - HackerRank': [
                     '../assets/certificates/sqlpng.png',
                     'Procured this certficate after passing JavaScript assessment on Hackerrank.',
