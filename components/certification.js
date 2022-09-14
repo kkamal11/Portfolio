@@ -72,6 +72,11 @@ export default {
                     '',
                     'https://www.udemy.com/certificate/UC-0f061dc1-69f0-418b-adba-d97c1b336df2/'
                 ],
+                'Optimization: Theory and Algorithms. - NPTEL': [
+                    '../assets/certificates/nptel.jpg',
+                    '',
+                    'https://drive.google.com/file/d/1ZyW5lBjAwRQNz6h6VFCeuvo2FKzU_IG3/view?usp=sharing'
+                ],
                 'Python - Coursera': [
                     '../assets/certificates/python.jpg',
                     '',
