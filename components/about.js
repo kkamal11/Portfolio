@@ -99,7 +99,7 @@ export default{
             i : -1,
             intervalID: null,
             slideName: "Python",
-            Interests: ["Data Science", "ML", "AI","App Dev", "Python" ]
+            Interests: ["Data Science", "ML", "AI","Data Analytics","App Dev", "Python" ]
         }
     },
     components:{
