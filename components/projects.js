@@ -24,7 +24,7 @@ export default{
                                 <p v-if="project.techUsed.length > 0" class="">
                                     <p class="pt-3 font-bold text-medium dark:text-gray-300">Technologies Used</p>
                                     <ul >
-                                        <li v-for="tech in project.techUsed">{{tech}}</li>
+                                        <li v-for="tech in project.techUsed"><i class="bi bi-code-slash text-orange-600"></i> {{tech}}</li>
                                     </ul>
                                 </p>
                                 <p v-if="project.Database.length > 0" class="py-3 font-bold text-medium  text-gray-700 dark:text-gray-300"">Database: <span class="font-normal text-base dark:text-cyan-400">{{project.Database}}</span></p>
