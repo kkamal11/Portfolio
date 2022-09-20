@@ -5,7 +5,7 @@ const form = {
         <div v-if="rc"  class="grid lg:grid-cols-2 bg-gradient-to-b from-sky-600 to-white ">
             <div class=" text-center dark:bg-gray-900" >
                 <h2 class="text-2xl font-medium text-gray-700 my-4 dark:text-gray-300"><span :class="{'text-white':isTyping}" >Send Me a Messsage</span></h2>
-                <p class="sm:text-left mx-8 md:mx-28 mb-2 text-gray-700 dark:text-gray-300 font-medium">Dropping a line to say hi, ask for my resume or see if we can build something together? I'd love to hear from you!</p>
+                <p class="sm:text-left mx-8 md:mx-28 mb-2 text-gray-700 dark:text-gray-300 font-medium"><span :class="{'text-white':isTyping}">Dropping a line to say hi, ask for my resume or see if we can build something together? I'd love to hear from you!</span></p>
                 <form name='submit-to-google-sheet'>
                     <div class="sm:text-left mx-8 md:mx-28">
                         <div class="mb-6">
