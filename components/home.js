@@ -25,7 +25,7 @@ const home = {
                     <button @click="showResume" v-if="!clickedHiring" class="card1 border-2 p-2 px-4 rounded-lg hover:border-sky-900 hover:underline hover:underline-offset-4 decoration-amber-400">Resume</button>
                     <button v-if="!clickedHiring" v-on:click="showEmail" class="card1 border-2 rounded-lg hover:underline-offset-4 decoration-amber-400 hover:border-sky-900 hover:underline">Hire Me</button>
                     <div v-if="clickedHiring" class="col-span-2 p-2 border-2 rounded-xl hover:border-sky-900 text-white md:text-lg text-center">
-                        <span><router-link :to="Contact" class="underline underline-offset-4 hover:decoration-amber-400">Contact Here&nbsp;</router-link>or drop an email at <span class="select-all underline underline-offset-4 hover:decoration-amber-400">kishorkamal7091@gmail.com</span></span>&nbsp;
+                        <span><router-link :to="Contact" class="underline underline-offset-4 hover:decoration-amber-400">Contact Here&nbsp;</router-link>or drop an email at <span class="select-all underline underline-offset-4 hover:decoration-amber-400">reachmeviamaill@gmail.com</span></span>&nbsp;
                         <button @click="cancelPopUp" class="hover:text-red-600 text-2xl"><i class="bi bi-x-lg"></i></button>
                     </div>
                 </div>
