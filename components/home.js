@@ -59,7 +59,7 @@ const home = {
                 setTimeout(() => {
                     this.clickedHiring = false;
                     this.hiringButtonDisabled = false;
-                }, 10000);
+                }, 6000);
             }
             
         },
