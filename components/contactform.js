@@ -43,7 +43,7 @@ const form = {
 
     data() {
         return {
-            userName:"",
+            userName: "",
             email: "",
             message: "",
             submitButtonDisabled: true,
@@ -55,7 +55,7 @@ const form = {
             messageBeingSent: false,
             rc: true,
             showThankYouMsg: false,
-            showCorrectNameTick:false,
+            showCorrectNameTick: false,
             showCorrectEmailTick: false,
             showCorrectMessageTick: false,
             isTyping: false,
@@ -65,6 +65,27 @@ const form = {
         }
     },
     methods: {
+        sendWebhookMessage: async function (email) {
+            const webhookURL = 'https://chat.googleapis.com/v1/spaces/AAAAXDp-k4E/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=01DYmEH9KI8860NcBGFnIbSFEdzU7c6qvMSaARrDSuM%3D';
+            const data = JSON.stringify({
+                'text': `You just received a message from ${email}`,
+            });
+            let response = await fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json; charset=UTF-8',
+                },
+                body: data,
+            }).catch((err) => {
+                return err
+            })
+            if (response.ok){
+                return true
+            }
+            else{
+                return false
+            }
+        },
         submitMessage: async function (e) {
             if (this.email == "") {
                 this.emailwarning = "Please enter your email";
@@ -84,7 +105,7 @@ const form = {
                 const form = document.forms['submit-to-google-sheet'];
                 let formdata = new FormData(form);
                 const time = new Date();
-                formdata.append('TimeStamp',time);
+                formdata.append('TimeStamp', time);
                 e.preventDefault();
 
                 try {
@@ -93,12 +114,19 @@ const form = {
                         body: formdata
                     })
                     if (response.ok) {
-                        this.messageBeingSent = false;
-                        this.showThankYouMsg = true
-                        this.submitButtonDisabled = true;
-                        this.showNewMessage = true;
+                        let webStatus = this.sendWebhookMessage(this.email)
+                        if (webStatus) {
+                            this.messageBeingSent = false;
+                            this.showThankYouMsg = true
+                            this.submitButtonDisabled = true;
+                            this.showNewMessage = true;
+                        }
+                        else{
+                            this.messageBeingSent = false;
+                            this.showErrorMessage = true;
+                        }
                     }
-                    else{
+                    else {
                         this.messageBeingSent = false;
                         this.showErrorMessage = true;
                     }
@@ -129,7 +157,7 @@ const form = {
             })
         },
         cancelPopUp: function () {
-            if(this.nameWarning.length > 0){
+            if (this.nameWarning.length > 0) {
                 this.nameWarning = "";
             }
             if (this.emailwarning.length > 0) {
@@ -191,18 +219,18 @@ const form = {
             }
         );
     },
-    watch:{
-        userName: function(val){
-            if(val.length != 0){
+    watch: {
+        userName: function (val) {
+            if (val.length != 0) {
                 this.showCorrectNameTick = true;
                 this.isTyping = true;
             }
-            else{
+            else {
                 this.showCorrectNameTick = false;
-                if(this.email.length == 0){
+                if (this.email.length == 0) {
                     this.isTyping = false;
                 }
-                else{
+                else {
                     this.nameWarning = "You can enter your name here"
                 }
             }
