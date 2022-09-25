@@ -24,11 +24,13 @@ const form = {
                             <p v-if="textwarning.length > 0" class="bg-red-400 mt-2 p-2 rounded-xl text-white" >{{textwarning}}<button v-on:click="cancelPopUp" class="float-right text-xl mr-2 font-bold hover:text-red-800"><i class="bi bi-x-lg"></i></button></p>
                         </div>
                         <p v-if="showThankYouMsg && !messageBeingSent && !showErrorMessage" class="bg-red-600 mt-2 p-2 rounded-xl text-white"> Thank You For Getting In Touch.<button v-on:click="cancelPopUp" class="float-right text-xl mr-2 font-bold hover:text-red-800"><i class="bi bi-x-lg"></i></button></p>
-                        <button v-on:click="submitMessage" v-if="!messageBeingSent && !showNewMessage && !showErrorMessage" :disabled="submitButtonDisabled" id="btn" class="p-2 my-3 bg-sky-600 shadow-lg shadow-sky-800/50 text-white rounded-xl"  :class="{'hover:bg-sky-800': !submitButtonDisabled, 'cursor-not-allowed': submitButtonDisabled }">Send... <i class="bi bi-chat-left-heart"></i></button>
                         <button v-if="showNewMessage && !messageBeingSent && !showErrorMessage" disabled class="green p-2 my-3 shadow-lg shadow-sky-800/50 text-white rounded-xl"  :class="{'cursor-not-allowed': submitButtonDisabled }">Message sent successfully. ✔</button>
                         <button v-if="showErrorMessage" disabled class="bg-red-700 p-2 my-3 shadow-lg shadow-sky-800/50 text-white rounded-xl"  :class="{'cursor-not-allowed': submitButtonDisabled }">Oops... An error occured.</button>
                         <button v-if="showNewMessage || showErrorMessage" v-on:click="reload" id="btn2" class="p-2 my-3 bg-yellow-400 shadow-lg shadow-sky-800/50 text-white rounded-xl hover:bg-yellow-600">Send Another <i class="bi bi-chat-left-heart"></i></button>
-                        <div v-if="messageBeingSent" class="loader"></div>
+                        <div class="flex items-center justify-center">
+                            <button v-on:click="submitMessage" v-if="!messageBeingSent && !showNewMessage && !showErrorMessage" :disabled="submitButtonDisabled" id="btn" class="p-2 my-3 bg-sky-600 shadow-lg shadow-sky-800/50 text-white rounded-xl"  :class="{'hover:bg-sky-800': !submitButtonDisabled, 'cursor-not-allowed': submitButtonDisabled }">Send... <i class="bi bi-chat-left-heart"></i></button>
+                            <div v-if="messageBeingSent" class="loader"></div>
+                        </div>
                     </div>
                 </form>
             </div>
