@@ -44,6 +44,14 @@ export default {
                     <img width="80px" class="mx-auto mt-2" src="./assets/tailwindCss.svg" alt="Tailwind logo">
                     <p>Tailwind CSS</p>
                 </div>
+                <div class="text-center text-gray-50 hover:text-sky-500 rounded-3xl hover:shadow-xl dark:text-gray-900 dark:hover:text-white">
+                    <img width="55px" class="mx-auto mt-2" src="./assets/numpy.svg" alt="Numpy logo">
+                    <p>Numpy</p>
+                </div>
+                <div class="text-center text-gray-50 hover:text-sky-500 rounded-3xl hover:shadow-xl dark:text-gray-900 dark:hover:text-white">
+                    <img width="50px" class="mx-auto mt-2" src="./assets/pandas_mark.svg" alt="Pandas logo">
+                    <p>Pandas</p>
+                </div>
                 <div class="text-center text-gray-50 hover:text-green-900 rounded-3xl hover:shadow-xl dark:text-gray-900 dark:hover:text-white">
                     <i class="bi bi-file-earmark-spreadsheet-fill text-green-900 text-6xl block"></i>
                     <p>Spreadsheet-Excel</p>
