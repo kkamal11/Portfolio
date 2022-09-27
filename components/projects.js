@@ -37,11 +37,22 @@ export default{
                 </div>
             </div> 
         </div>
+        <div class="flex justify-center items-center text-gray-700 dark:text-gray-300">
+            <p class="text-xs"><i class="bi bi-list-ol"></i> The projects have been arranged in the order they have been done by me.</p>
+        </div>
         <hr class="my-4 border-dotted border-t-4 border-indigo-500 w-1/12 mx-auto  dark:border-white md:my-4">
     </div>`,
     data: function(){
         return {
             projects :[
+                {
+                    title:"IITM Youtube Channel Data Analysis",
+                    description:"This is an ongoing project and I will be completing soon.",
+                    techUsed: ["Python","Pandas","Numpy","Matplotlib"],
+                    Database: "",
+                    imgPath:"./assets/fevcon.png",
+                    link:"https://github.com/kkamal11/IITM_BS_YT_DATA_ANALYSIS",
+                },
                 {
                     title:"QuantfiedSelf App",
                     btm_text:"v2.0 Advanced",
