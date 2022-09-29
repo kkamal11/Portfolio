@@ -7,6 +7,7 @@ export default{
                 <img width="200px" class="mx-auto rounded-full" src="./assets/profile-pic.png" alt="Image">
             </div>
             <h5 class="text-gray-800 mt-4 text-xl font-medium leading-tight dark:text-gray-300">Kamal Kishor Chaurasiya</h5>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Python Engineer</p>
         </div>
         <div class="leading-6 text-left text-gray-800 dark:text-gray-300 mx-8 lg:mx-28 xl:mx-48 p-6 rounded-xl shadow-2xl shadow-indigo-400  dark:shadow-blue-800/50 dark:shadow-lg"  @mouseover="highlight" @mouseout="highlightText=false">
                 <div class="lg:mx-20 leading-relaxed">
@@ -40,24 +41,24 @@ export default{
                                 <option v-for="(topic,index) in aboutDetails" :value="topic">{{ topic }}</option>
                             </select>
                         </div> 
-                        <div v-if="showList[0]" class="md:mx-12  md:px-4 p-6 bg-red-600 rounded-b-lg">
+                        <div v-if="showList[0]" class="md:px-4 p-6 bg-red-600 rounded-lg">
                             <ul class="text-yellow-400 font-medium">
                                 <li class="font-bold tracking-wide underline underline-offset-4">Senior Secondary <i class='fas fa-school' style='font-size:16px;color:yellow'></i></li>
                                 <li>MS Memorial Public School</li>
                                 <li class="mt-2 font-bold tracking-wide underline underline-offset-4">Undergraduate <i class='fas fa-graduation-cap' style='font-size:16px;color:yellow'></i></li>
                                 <li>National Institute of Technology Kurukshetra, <i>B.Tech, 2019-23<span class="text-base font-normal float-right">CGPA: 8.40</span></i></li>
-                                <li>Indian Institute of Technology Madras, <i>BS, 2021-2024<span class="text-base font-normal float-right">CGPA: 9.40</span></i></li>
+                                <li>Indian Institute of Technology Madras, <i>B.Sc, 2021-Present<span class="text-base font-normal float-right">CGPA: 9.40</span></i></li>
                             </ul>
                         </div>
-                        <div v-if="showList[1]" class="md:mx-12 md:px-4 p-6 bg-red-600 rounded-lg font-medium">
+                        <div v-if="showList[1]" class="md:px-4 p-6 bg-red-600 rounded-lg font-medium">
                             <ul class="text-yellow-400">
                                 <li v-for="skill in mySkills">&#128073; {{ skill }}</li>
                             </ul>
                         </div>
-                        <div v-if="showList[2]" class="md:mx-12 md:px-4 p-6 bg-red-600 rounded-md md:text-right font-medium">
+                        <div v-if="showList[2]" class="md:px-4 p-6 bg-red-600 rounded-md  font-medium">
                             <ul class="text-yellow-400">
-                                <li>Project Intern <i>SCoE, Nit Kurukshetra <span class="text-base font-normal float-right">&nbsp;&nbsp;Jan/22 to May/22</span></i></li>
-                                <li>Python Academic Mentor <i>IIT Madras <span class="text-base font-normal float-right">&nbsp;&nbsp;Aug/22 to Sep/22</span></i></li>
+                            <li>Project Intern, <i>SCoE, Nit Kurukshetra <span class="text-base font-normal float-right">&nbsp;&nbsp;Jan/22 to May/22</span></i></li>
+                            <li>Python Academic Mentor, <i>IIT Madras <span class="text-base font-normal float-right">&nbsp;&nbsp;Aug/22 to Sep/22</span></i></li>
                             </ul>
                         </div>
                     </div>
