@@ -53,7 +53,7 @@ export default {
                     techUsed: ["Python", "Numpy", "Pandas", "Seaborn", "Matplotlib"],
                     Database: "",
                     imgPath: "./assets/projects/ipl.webp",
-                    link: "https://github.com/kkamal11/IITM_BS_YT_DATA_ANALYSIS",
+                    link: "https://github.com/kkamal11/EDA_on_IPL",
                     features: [
                         "Number of matches played till now.",
                         "Number of IPL seasons.",
