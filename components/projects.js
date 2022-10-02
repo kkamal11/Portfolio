@@ -96,6 +96,14 @@ export default {
                     imgPath: "./assets/projects/Home.png"
                 },
                 {
+                    title: "Simple ToDo app",
+                    description: "A single-page to-do application. It facilitates users to create and delete tasks, mark them as complete or incomplete and filter them based on complete or incomplete status. The tasks are saved in browser's local storage and hence are persistent. It is also equipped with light and dark mode feature.",
+                    techUsed: ["HTML", "CSS", "JavaScript", "Vue.js", "Bootstrap"],
+                    Database: "",
+                    link: "https://kkamal11.github.io/To-Do-application-using-VueJs/",
+                    imgPath: "./assets/projects/ToDo.png"
+                },
+                {
                     title: "QuantfiedSelf App",
                     btm_text: "v1",
                     description: "A self-tracking web application where users can save and keep track of their activities and tasks. They can create, read, update and delete trackers and logs as per their requirements. Moreover, they can also visualise their progress over time graphically.",
@@ -104,14 +112,6 @@ export default {
                     id: true,
                     link: "https://github.com/kkamal11/Quantified-Self-Application",
                     imgPath: "./assets/projects/qapp1.png"
-                },
-                {
-                    title: "Simple ToDo app",
-                    description: "A single-page to-do application. It facilitates users to create and delete tasks, mark them as complete or incomplete and filter them based on complete or incomplete status. The tasks are saved in browser's local storage and hence are persistent. It is also equipped with light and dark mode feature.",
-                    techUsed: ["HTML", "CSS", "JavaScript", "Vue.js", "Bootstrap"],
-                    Database: "",
-                    link: "https://kkamal11.github.io/To-Do-application-using-VueJs/",
-                    imgPath: "./assets/projects/ToDo.png"
                 },
             ]
         }
