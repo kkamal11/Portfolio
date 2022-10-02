@@ -2,7 +2,7 @@ const things = {
     template:`
     <div class="text-center">
         <div class="mx-8 lg:m-14">
-            <h1 class="text-4xl font-bold text-gray-700 my-6 tracking-wider dark:text-white ">I am primarily focused on...</h1>
+            <h1 class="text-4xl font-bold text-gray-700 my-6 tracking-wider dark:text-white ">I make use of...</h1>
             <div class="grid lg:grid-cols-3 gap-x-10 md:mx-36">
                 <div class="card bg-gray-50 border-b-4 rounded-xl my-4 hover:bg-blue-50 hover:border-b-blue-800 dark:bg-gray-800 dark:border-gray-800 dark:hover:border-b-blue-800" >
                     <h2 class="text-2xl text-sky-700 font-medium my-4 tracking-wider dark:text-fuchsia-50">Python</h2>
