@@ -43,7 +43,7 @@ const things = {
                         Do visit project section or github for more details.
                     </p>
                     <p v-if="one" class="font-medium">Built using:</p>
-                    <p v-if="one" class="">HTML/CSS, JavaScript, Vuejs, Tailwind CSS, Python, Flask, SQLite, Celery</p>
+                    <p v-if="one" class="">HTML/CSS, JavaScript, Vuejs, Tailwind CSS, Python, Flask, SQLite, Redis, Celery, Bash, Sendgrid, Weasyprint</p>
                     <!--<a v-if="one" href="#" class="p-2 font-medium border-2 rounded-md hover:bg-red-600 hover:text-yellow-500 dark:hover:text-yellow-500">Live Demo</a>-->
                 </div>
             </a>
