@@ -30,7 +30,7 @@ const form = {
                         <div class="flex items-center justify-center">
                             <div>
                                 <button v-on:click="submitMessage" :class="{ shake: submitButtonDisabled }" v-if="!messageBeingSent && !showNewMessage && !showErrorMessage" id="btn" class="p-2 my-3 bg-sky-600 shadow-lg shadow-sky-800/50 text-white rounded-xl"  :class="{'hover:bg-sky-800': !submitButtonDisabled, 'cursor-not-allowed': submitButtonDisabled }">Send... <i class="bi bi-chat-left-heart"></i></button>
-                                <p v-if="submitButtonDisables">Please fill the required fields first.</p>
+                                <p v-if="submitButtonDisabled">Please fill the required fields first.</p>
                             </div>
                             <div v-if="messageBeingSent" class="loader"></div>
                         </div>
