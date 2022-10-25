@@ -38,7 +38,7 @@ export default {
     </div>`,
     data: function () {
         return {
-            certiCount = 0,
+            certiCount : 0,
             showAll:false,
             top3Certis:{
                 'Foundational level - IIT Madras': [
