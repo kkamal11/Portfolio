@@ -31,7 +31,7 @@ export default {
         </div>
         <div class="flex justify-center items-center mt-8">
             <button @click="showAll = !showAll" class=" text-center inline-block py-2 px-4 my-3 bg-sky-600 shadow-lg shadow-blue-800/50 text-white rounded-xl hover:bg-sky-700" >
-                <span v-if="!showAll">Show {{ certiCount() }} More</span>
+                <span v-if="!showAll">Show {{ certiCount }} More</span>
                 <span v-if="showAll">Show Less</span>
             </button>
         </div>
