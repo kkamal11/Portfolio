@@ -58,6 +58,7 @@ export default{
                             <ul class="text-yellow-400">
                             <li>Project Intern, <i>SCoE, Nit Kurukshetra <span class="text-base font-normal float-right">&nbsp;&nbsp;Jan/22 to May/22</span></i></li>
                             <li>Python Academic Mentor, <i>IIT Madras <span class="text-base font-normal float-right">&nbsp;&nbsp;Aug/22 to Sep/22</span></i></li>
+                            <li>Teaching Assistant, <i>Machine Learning Foundation Course, IIT Madras BS<span class="text-base font-normal float-right">&nbsp;&nbsp;Sep/22 to Dec/22</span></i></li>
                             </ul>
                         </div>
                     </div>
