@@ -82,6 +82,11 @@ export default {
                     '',
                     'https://www.coursera.org/account/accomplishments/certificate/GRTRUA3CTGPF'
                 ],
+                'HTML, CSS and Javascript - Coursera': [
+                    '../assets/certificates/HTML_CSS_JS.png',
+                    '',
+                    'https://coursera.org/share/3701054983df9cf78ea37bcc1a1a051c'
+                ],
                 
             }
         }
