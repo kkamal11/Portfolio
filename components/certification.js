@@ -100,7 +100,7 @@ export default {
     },
         computed:{
             certiCount: function(){
-                return Object.keys(top3Certis['otherCertis']).length;
+                return Object.keys(this.otherCertis).length;
             }
         }
 }
