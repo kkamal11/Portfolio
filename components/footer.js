@@ -11,8 +11,9 @@ const footer = {
             </div>
             <hr class="mb-4 border-gray-300 sm:mx-auto dark:border-gray-700 " >
             <div class="sm:flex sm:items-center sm:justify-between">
-                <p class="md:mx-auto text-sm text-gray-500 text-center dark:text-gray-400">&copy; 2022 Kamal Kishor Chaurasiya
-                </p>
+                <p class="md:mx-auto text-sm text-gray-500 text-center dark:text-gray-400">Last Updated On: January 05, 2023</p>
+                <p class="md:mx-auto text-sm text-gray-500 text-center dark:text-gray-400">&copy; 2023 Kamal Kishor Chaurasiya</p>
+                <p class="md:mx-auto text-sm text-gray-500 text-center dark:text-gray-400"><a onclick="alert('Coming soon')" class="hover:underline underline-offset-2 hover:cursor-pointer">Read my Blog</a></p>
             </div>
         </footer>
     </div>`,
