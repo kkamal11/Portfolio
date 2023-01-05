@@ -56,6 +56,10 @@ export default {
                     <i class="bi bi-file-earmark-spreadsheet-fill text-green-900 text-6xl block"></i>
                     <p>Spreadsheet-Excel</p>
                 </div>
+                <div class="text-center text-gray-50 hover:text-green-900 rounded-3xl hover:shadow-xl dark:text-gray-900 dark:hover:text-white">
+                    <i class="fa-brands fa-java text-red-600 text-6xl block""></i>
+                    <p>Java</p>
+                </div>
             </div>
         </div>
         <hr class="border-dotted border-t-4 border-sky-600 w-1/12 mx-auto mt-12 mb-8 dark:border-white">    
