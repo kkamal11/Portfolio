@@ -43,8 +43,8 @@ const home = {
             name: true,
             yellowText: false,
             clickedHiring:false,
-            fullTextArray: ["A Python Developer with focus on Flask + Vue.", "An aspiring data scientist", "An insatiably curious and lifelong learner....", "Let's connect on LinkedIn."],
-            smScreenTextArray:["Hello, I am Kamal.", "I am a Python Developer.", "and an aspiring data scientist"],
+            fullTextArray: ["A Python Developer with focus on Flask + Vue.", "An aspiring Data Scientist.", "An insatiably curious and lifelong learner....", "Let's connect on LinkedIn."],
+            smScreenTextArray:["Hello, I am Kamal.", "I am a Python Developer.", "and an aspiring Data Scientist."],
         }
     },
     components:{ 
