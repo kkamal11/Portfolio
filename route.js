@@ -16,28 +16,46 @@ const routes = [
             things:things,
             contact:form,
         },
+      meta: {
+        title: 'Home'
+      }
     },
     {
         path: "/projects",
         components: {
             default: projects,
         },
+      meta: {
+        title: 'Projects'
+      }
     },
     {
         path: "/about",
         component: about,
+        meta: {
+        title: 'About'
+      }
     },
     {
         path:"/contact",
         component:form
+        meta: {
+        title: 'Contact'
+      }
     },
     {
         path: "/blogs",
         component: blogs,
+    meta: {
+        title: 'Blogs'
+      }
     },
     {
         path:"*",
-        component: pageNotFound
+        component: pageNotFound,
+            meta: {
+        title: 'Error'
+      }
     }
 ];
 
@@ -47,5 +65,8 @@ const router = new VueRouter({
     linkActiveClass: 'active',
     linkExactActiveClass: 'exact-active',
 });
-
+router.beforeEach((to, from, next) => {
+  document.title = `${to.meta.title} | Kamal`;
+  next();
+})
 export default router;
