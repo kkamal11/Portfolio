@@ -38,7 +38,7 @@ const routes = [
     },
     {
         path:"/contact",
-        component:form
+        component:form,
         meta: {
         title: 'Contact'
       }
