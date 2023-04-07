@@ -6,6 +6,7 @@ import skills from "./components/skills.js";
 import things from "./components/things_i_love.js"
 import form from "./components/contactform.js"
 import pageNotFound from "./components/pageNotFound.js";
+import about_org from "./components/about_org.js";
 
 const routes = [
     {
@@ -31,7 +32,7 @@ const routes = [
     },
     {
         path: "/about",
-        component: about,
+        component: about_org,
         meta: {
         title: 'About'
       }
