@@ -13,9 +13,7 @@ const app = new Vue({
         'footer-comp': footer,
     },
     methods: {
-        goBack: function () {
-            window.open("http://127.0.0.1:5501/#/")
-        }
+
     }
 })
 

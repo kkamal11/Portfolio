@@ -1,17 +1,23 @@
 import certification from "./certification.js";
-export default{
-    template:`
+export default {
+    template: `
     <div>
-        <div class="text-center mx-auto p-10">
+        <!--
+        <div id="profile" class="text-center mx-auto p-10">
             <div class="mx-auto w-52 p-0.5  border-4 rounded-full border-cyan-600 dark:border-gray-300 dark:shadow-md dark:shadow-sky-400" >
                 <img width="200px" class="mx-auto rounded-full" src="./assets/profile-pic.png" alt="Image">
             </div>
             <h5 class="text-gray-800 mt-4 text-xl font-medium leading-tight dark:text-gray-300">Kamal Kishor Chaurasiya</h5>
         </div>
-        <div class="leading-6 text-left text-gray-800 dark:text-gray-300 mx-8 lg:mx-28 xl:mx-48 p-6 rounded-xl shadow-2xl shadow-indigo-400  dark:shadow-blue-800/50 dark:shadow-lg"  @mouseover="highlight" @mouseout="highlightText=false">
-                <div class="lg:mx-20 leading-relaxed">
+        -->
+        <div class="leading-6 mt-16 text-left text-gray-800 dark:text-gray-300 mx-8 lg:mx-28 xl:mx-48 p-6 rounded-xl shadow-2xl shadow-indigo-400  dark:shadow-blue-800/50 dark:shadow-lg"  @mouseover="highlight" @mouseout="highlightText=false">
+            <div class="float-right">
+                <button @click="$emit('cancelPopUp')" class="py-2 px-4 bg-sky-600 shadow-lg shadow-blue-800/50 text-white rounded-xl hover:bg-red-600"><i class="bi bi-x-lg"></i> </button>
+            </div>
+                <div class="lg:mx-20 leading-relaxed mt-4">
+                    <div class="text-3xl font-bold text-gray-700 my-6 dark:text-white">Hi, I'm Kamal. Nice to meet you. &#129309;</div>
                     <p>
-                        Hi, I'm Kamal, a <span :class="{'green-underline':highlightText}">python developer</span> and a <span :class="{'green-underline':highlightText}">data science enthusiast</span> with a
+                        I am a <span :class="{'green-underline':highlightText}">python developer</span> and a <span :class="{'green-underline':highlightText}">data science enthusiast</span> with a
                         keen ineterest in developing elegant, efficient and highly interactive web applications. I am equally passionate about bringing alive the hidden insights of data and discover wonderful
                         solutions to<span :class="{'green-underline':highlightText}"> solve a problem</span>.
                     </p>
@@ -44,7 +50,7 @@ export default{
                             <ul class="text-yellow-400 font-medium">
                                 <li class="font-bold tracking-wide underline underline-offset-4">Senior Secondary <i class='fas fa-school' style='font-size:16px;color:yellow'></i></li>
                                 <li>MS Memorial Public School</li>
-                                <li class="mt-2 font-bold tracking-wide underline underline-offset-4">Undergraduate <i class='fas fa-graduation-cap' style='font-size:16px;color:yellow'></i></li>
+                                <li class="mt-2 font-bold tracking-wide underline underline-offset-4">Undergraduate <i class='fas fa-graduation-cap' style='font-size:16px;'></i></li>
                                 <li>National Institute of Technology Kurukshetra, <i>B.Tech, 2019-23<span class="text-base font-normal float-right">CGPA: 8.40</span></i></li>
                                 <li>Indian Institute of Technology Madras, <i>B.Sc, 2021-Present<span class="text-base font-normal float-right">CGPA: 9.40</span></i></li>
                             </ul>
@@ -74,7 +80,11 @@ export default{
                         </div>
                     </div>
                 </div>
+            <div class="text-center">
+                <button @click="$emit('cancelPopUp')" class="py-2 px-4 bg-sky-600 shadow-lg shadow-blue-800/50 text-white rounded-xl hover:bg-red-600"><i class="bi bi-x-lg"></i></button>
+            </div>
         </div>
+        <!--
         <hr class=" border-dotted border-t-4 border-sky-600 w-1/12 mx-auto my-10 dark:border-white ">    
         <div class="text-center text-gray-800 dark:text-gray-300 mb-10  lg:block">
             <p class="text-sky-700 dark:text-gray-300 font-bold text-2xl tracking-wider">Areas of Interest</p>
@@ -86,34 +96,33 @@ export default{
                 <div @click="changeSlide" class="hidden md:flex justify-center items-center h-64 w-64"><i @mouseover="stopSlideOnHover" @mouseout="changeSlideAuto" class="arrow-right bi bi-arrow-right-circle text-5xl hover:cursor-pointer hover:text-green-500"></i></div>
             </div>
         </div>
-        <hr class=" border-dotted border-t-4 border-sky-600 w-1/12 mx-auto my-10 hidden md:block dark:border-white overflow-hidden">    
-        <certificates-comp></certificates-comp>
-        <hr class=" border-dotted border-t-4 border-sky-600 w-1/12 mx-auto my-10 hidden md:block dark:border-white overflow-hidden">    
+        <hr class=" border-dotted border-t-4 border-sky-600 w-1/12 mx-auto my-10 hidden md:block dark:border-white overflow-hidden">
+        -->
     </div>`,
-    data(){
+    data() {
         return {
-            mySkills:["Python","SQL","HTML, CSS, JavaScript","Vue.js","Flask","Bash/Shell Scripting","MS Excel","Tailwind CSS"],
+            mySkills: ["Python", "SQL", "Java", "HTML, CSS, JavaScript", "Vue.js", "Flask", "Bash/Shell Scripting", "MS Excel", "Tailwind CSS"],
             selected: "Education",
-            aboutDetails:["Education","Skills","Experience"],
-            showList:[true,false,false],
-            highlightText:false,
-            i : -1,
+            aboutDetails: ["Education", "Skills", "Experience"],
+            showList: [true, false, false],
+            highlightText: false,
+            i: -1,
             intervalID: null,
             slideName: "Python",
-            Interests: ["Data Science", "ML", "AI","Data Analytics","App Dev", "Python" ]
+            Interests: ["Data Science", "ML", "AI", "Data Analytics", "App Dev", "Python"]
         }
     },
-    components:{
-        'certificates-comp':certification
+    components: {
+        'certificates-comp': certification
     },
-    methods:{
-        changeSlide: function(){
+    methods: {
+        changeSlide: function () {
             this.i = (this.i < 100) ? this.i : 0;
             this.i++;
             let ind = this.i % this.Interests.length;
             this.slideName = this.Interests[ind];
         },
-        changeSlideAuto: function(){
+        changeSlideAuto: function () {
             this.intervalID = setInterval(() => {
                 this.i = (this.i < 100) ? this.i : 0;
                 this.i++;
@@ -121,29 +130,29 @@ export default{
                 this.slideName = this.Interests[ind];
             }, 1000);
         },
-        stopSlideOnHover: function(){
+        stopSlideOnHover: function () {
             clearInterval(this.intervalID)
         },
-        highlight: function(){
+        highlight: function () {
             this.highlightText = true;
         },
-        showDetail: function(index){
-            for(let i = 0; i<3;i++){
+        showDetail: function (index) {
+            for (let i = 0; i < 3; i++) {
                 this.showList[i] = (index != i) ? false : true;
                 this.selected = this.aboutDetails[index];
             }
         },
     },
-    watch:{
-        selected: function(newval,oldval){
+    watch: {
+        selected: function (newval, oldval) {
             this.showList[this.aboutDetails.indexOf(oldval)] = false;
             this.showList[this.aboutDetails.indexOf(newval)] = true;
         }
     },
-    mounted(){
+    mounted() {
         this.changeSlideAuto()
     },
-    beforeDestroy () {
+    beforeDestroy() {
         clearInterval(this.intervalID) //to prevent memory leaks that setInterval() method can cause
     }
 }

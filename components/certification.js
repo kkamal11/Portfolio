@@ -1,7 +1,7 @@
 export default {
     template: `
-    <div class="hidden md:block mt-4 lg:mx-12">
-        <H1 class="text-sky-700 text-center dark:text-gray-300 font-bold text-2xl tracking-wider">Certifications</H1>
+    <div class="hidden md:block mt-4 py-4 lg:px-12 bg-black">
+        <H1 class="text-white text-center dark:text-gray-300 font-bold text-4xl tracking-wider my-4">Certifications</H1>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 text-center">
             <div id="im" v-for="[key,value] in Object.entries(top3Certis)" class="container">
@@ -57,6 +57,11 @@ export default {
                 ],
             },
             otherCertis: {
+                'MLT - IIT Madras': [
+                    '../assets/certificates/mlt.png',
+                    'Procured this certficate after completing online proctored exam of Machine Learning Technique(MLT) course wherein I coded ML algorithms from scratch using Python & Numpy.',
+                    'https://drive.google.com/file/d/1bETv_1qU0fbrzOBLphXrWhC3kQ0wxs95/view?usp=share_link'
+                ],
                 'Python - HackerRank': [
                     '../assets/certificates/python-hackerrank.png',
                     'Procured this certficate after passing Python assessment on Hackerrank.',

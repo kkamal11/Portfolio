@@ -1,9 +1,9 @@
 const things = {
-    template:`
+    template: `
     <div class="text-center">
         <div class="mx-8 lg:m-14">
-            <h1 class="text-4xl font-bold text-gray-700 my-6 tracking-wider dark:text-white ">I make use of...</h1>
-            <div class="grid lg:grid-cols-3 gap-x-10 md:mx-36">
+            <h1 class="text-4xl font-bold text-gray-700 my-6 tracking-wider dark:text-white">I make use of...</h1>
+            <div class="grid md:grid-cols-3 gap-x-10 md:mx-36">
                 <div class="card bg-gray-50 border-b-4 rounded-xl my-4 hover:bg-blue-50 hover:border-b-blue-800 dark:bg-gray-800 dark:border-gray-800 dark:hover:border-b-blue-800" >
                     <h2 class="text-2xl text-sky-700 font-medium my-4 tracking-wider dark:text-fuchsia-50">Python</h2>
                     <i class="fab fa-python text-blue-900 text-8xl"></i>
@@ -31,10 +31,12 @@ const things = {
             </div>
             <hr class=" border-dotted border-t-4 border-indigo-500 w-1/12 mx-auto my-12 dark:border-white"> 
         </div>  
+
+        <!--PROJECTS-->
         <div class="mx-8 lg:m-14">
         <h1 class="text-4xl font-bold text-gray-700 my-6 tracking-wider dark:text-white ">Latest projects</h1>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-10 mb-4 md:mx-12 overflow-auto">
-            <a @mouseover="showOnHover('one')" @mouseout="one=false" href="https://github.com/kkamal11/Quantified_Self_App_v2.0" target="_blank" id="proj-card" class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-rose-700" >
+            <a @mouseover="showOnHover('one')" @mouseout="one=false" href="https://github.com/kkamal11/Quantified_Self_App_v2.0" target="_blank" id="proj-card" class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-sky-700" >
                 <h2 class="mt-16 text-2xl text-sky-700 font-medium tracking-wider dark:text-fuchsia-50">Quantified Self App</h2>
                 <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">v2.0 Advanced</p>
                 <div class="mt-8 text-gray-700 dark:text-fuchsia-50">
@@ -47,7 +49,7 @@ const things = {
                     <!--<a v-if="one" href="#" class="p-2 font-medium border-2 rounded-md hover:bg-red-600 hover:text-yellow-500 dark:hover:text-yellow-500">Live Demo</a>-->
                 </div>
             </a>
-            <a @mouseover="showOnHover('two')" @mouseout="two=false" href="https://github.com/kkamal11/EDA_on_IPL" target="_blank" id="proj-card" class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-rose-700" >
+            <a @mouseover="showOnHover('two')" @mouseout="two=false" href="https://github.com/kkamal11/EDA_on_IPL" target="_blank" id="proj-card" class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-sky-700" >
                 <h2 class="mt-16 text-2xl text-sky-700 font-medium my-1 tracking-wider dark:text-fuchsia-50">IPL Exploratory Data Analysis (EDA)</h2>
                 <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">A data analysis project</p>
                 <div class="mt-8 text-gray-700 dark:text-fuchsia-50">
@@ -56,7 +58,7 @@ const things = {
                     <p v-if="two">Python, NumPy, Pandas, Seaborn, Matplotlib</p>
                 </div>
             </a>
-            <a @mouseover="showOnHover('three')" @mouseout="three=false" href="https://github.com/kkamal11/Quantified-Self-Application" target="_blank"  class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-rose-700" >
+            <a @mouseover="showOnHover('three')" @mouseout="three=false" href="https://github.com/kkamal11/Quantified-Self-Application" target="_blank"  class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-sky-700" >
                 <h2 class="mt-16 text-2xl text-sky-700 font-medium tracking-wider dark:text-fuchsia-50">Quantified Self App</h2>
                 <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">v1.0</p>
                 <div class="mt-8 text-gray-700 dark:text-fuchsia-50">
@@ -82,20 +84,20 @@ const things = {
             </a> 
             -->
         </div>
-        <router-link to="/projects" class="px-4 py-2 text-gray-700 font-medium border-2 rounded-md hover:bg-red-600 hover:text-yellow-500 dark:text-white dark:hover:text-yellow-500">See more</router-link>
+        <router-link to="/projects" class="px-4 py-2 text-gray-700 font-medium border-2 rounded-md btn-bg-color hover:text-white dark:text-white">See more</router-link>
         <hr class=" border-dotted border-t-4 border-indigo-500 w-1/12 mx-auto my-12 dark:border-white"> 
     </div> 
     </div>`,
-    data: function(){
+    data: function () {
         return {
-            one:false,
-            two:false,
-            three:false,
-            four:false
+            one: false,
+            two: false,
+            three: false,
+            four: false
         }
     },
     methods: {
-        showOnHover: function(ind){
+        showOnHover: function (ind) {
             this.one = ind == "one" ? true : false;
             this.two = ind == "two" ? true : false;
             this.three = ind == "three" ? true : false;

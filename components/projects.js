@@ -1,3 +1,4 @@
+import tag from "./tag.js"
 export default {
     template: `
     <div>
@@ -5,17 +6,21 @@ export default {
             <p class="uppercase tracking-widest text-xl font-medium">My Projects and Works</p>
         </div>
         <div class="mx-4 md:mx-12 sm:justify-center mb-8">
-            <div v-for="(project,index) in projects" class="card mb-12 rounded-3xl bg-gray-300 dark:bg-gray-800 border-b-2 border-gray-300 dark:border-b-gray-800 hover:border-b-pink-600 dark:hover:border-b-pink-600">
+            <div v-for="(project,index) in projects" class="mb-12 rounded-3xl bg-gray-200 dark:bg-gray-800 border-b-2 border-gray-300 dark:border-b-gray-800 hover:border-b-pink-600 dark:hover:border-b-pink-600">
                 <div class="text-gray-700 text-center dark:text-gray-300 py-8">
-                    <p class="font-bold text-2xl" >{{ project.title }}</p>
-                    <span v-if="project.id" class="text-xs">{{project.btm_text}}</span>
+                    <div>
+                        <p class="font-bold text-2xl" :class="{'pb-4':!project.id}" >{{ project.title }}</p>
+                        <p v-if="project.id" class="text-xs pb-4">{{project.btm_text}}</p>
+                    </div>
+                    <hr>
+                    <tags class="inline-block mt-3" v-for="tech in project.techUsed" :key="tech">{{tech}}</tags>
                 </div>
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 mx-4 md:mx-8">
                     <div class="flex items-center justify-center">
                         <img class="rounded-lg" :src="project.imgPath">
                     </div>
                     <div>
-                        <div class= "max-h-80 overflow-y-auto scroll-smooth text-gray-700 dark:text-cyan-400">
+                        <div class= "max-h-80 overflow-y-auto scroll-smooth text-gray-700 dark:text-white">
                             <p>
                                 {{ project.description }}
                                 <ul v-if="project.features" class="list-disc">
@@ -32,8 +37,11 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="text-center">
-                    <button @click="openLinkToGithub(index)" class="p-2 my-3 bg-sky-600 shadow-lg shadow-blue-800/50 text-white rounded-xl hover:bg-sky-700">Github link <i class="bi bi-box-arrow-in-up-right"></i></button>
+                <div class="text-center my-3">
+                    <button @click="openLinkToGithub(index)" class="py-2 px-4 my-3 bg-sky-500 text-white rounded-xl hover:bg-sky-600" title="Click to visit the github repository.">Github <i class="bi bi-box-arrow-in-up-right"></i></button>
+                    <button @click="openLinkToFork(index)" class="py-2 px-4 my-3 ml-4 bg-gray-500 text-white rounded-xl hover:bg-gray-600" title="Click to fork this project on github.">Fork <i class="fa fa-code-fork" aria-hidden="true"></i></button>
+                    <a :href="project.zipDownloadLink" download class="py-2 px-4 my-3 ml-4 bg-orange-500 text-white rounded-xl hover:bg-orange-600" title="Click to download the zipped source code.">Code <i class="bi bi-download"></i></a>
+                    <button @click="openContactToDiscuss(index)" class="py-2 px-4 my-3 ml-4 bg-white text-gray-900 rounded-xl hover:bg-gray-100 border-1-green" title="Click to let me know if you want to discuss on this project.">Discuss <i class="bi bi-chat-dots"></i></button>
                 </div>
             </div> 
         </div>
@@ -48,12 +56,14 @@ export default {
                 {
                     title: "Exploratory Data Analysis (EDA) on IPL dataset",
                     btm_text: "A data analysis and visualization project using Python",
-                    id:true,
+                    id: true,
                     description: "In this project, I have done exploratory data analysis on IPL matches where I have tried to answer a few questions and find some insights using the available data. The dataset that I have used in this notebook is IPL (Indian Premier League) dataset posted on Kaggle Datasets sourced from cricsheet. The dataset has information about IPL matches from 2008 to 2022. The following analysis have been covered in the project:",
                     techUsed: ["Python", "Numpy", "Pandas", "Seaborn", "Matplotlib"],
                     Database: "",
                     imgPath: "./assets/projects/ipl.webp",
                     link: "https://github.com/kkamal11/EDA_on_IPL",
+                    forkLink: "https://github.com/kkamal11/EDA_on_IPL/fork",
+                    zipDownloadLink:"https://github.com/kkamal11/EDA_on_IPL/archive/refs/heads/main.zip",
                     features: [
                         "Number of matches played till now.",
                         "Number of IPL seasons.",
@@ -89,10 +99,12 @@ export default {
                         "Use of caching to enhace performanc.",
                         "Dark Mode, Responsive and elegant UI across all devices."
                     ],
-                    techUsed: ["HTML/CSS", "JavaScript", "Vuejs", "Tailwind CSS", "Python", "Flask and its several extensions", "SQLAlchemy", "Celery", "Redis", "Bash", "Sendgrid", "Weasyprint"],
+                    techUsed: ["HTML", "CSS", "JavaScript", "Vuejs", "Tailwind CSS", "Python", "Flask", "Flask-Sqlalchemy", "Flask-Security", "Flask-RESTful", "SQLAlchemy", "Celery", "SQLite", "Redis", "Bash", "Sendgrid", "Weasyprint"],
                     Database: "SQLite, Redis",
                     id: true,
                     link: "https://github.com/kkamal11/Quantified_Self_App_v2.0",
+                    forkLink: "https://github.com/kkamal11/Quantified_Self_App_v2.0/fork",
+                    zipDownloadLink:"https://github.com/kkamal11/Quantified_Self_App_v2.0/archive/refs/heads/main.zip",
                     imgPath: "./assets/projects/Home.png"
                 },
                 {
@@ -101,24 +113,40 @@ export default {
                     techUsed: ["HTML", "CSS", "JavaScript", "Vue.js", "Bootstrap"],
                     Database: "",
                     link: "https://kkamal11.github.io/To-Do-application-using-VueJs/",
+                    forkLink: "https://github.com/kkamal11/To-Do-application-using-VueJs/fork",
+                    zipDownloadLink:"https://github.com/kkamal11/To-Do-application-using-VueJs/archive/refs/heads/main.zip",
                     imgPath: "./assets/projects/ToDo.png"
                 },
                 {
                     title: "QuantfiedSelf App",
                     btm_text: "v1",
                     description: "A self-tracking web application where users can save and keep track of their activities and tasks. They can create, read, update and delete trackers and logs as per their requirements. Moreover, they can also visualise their progress over time graphically.",
-                    techUsed: ["HTML", "CSS", "Python with Flask", "Flask_sqlalchemy", "minimal JavaScript"],
+                    techUsed: ["HTML", "CSS", "Python", "Flask", "Flask_sqlalchemy", "minimal JavaScript"],
                     Database: "SQLite",
                     id: true,
                     link: "https://github.com/kkamal11/Quantified-Self-Application",
+                    forkLink: "https://github.com/kkamal11/Quantified-Self-Application/fork",
+                    zipDownloadLink:"https://github.com/kkamal11/Quantified-Self-Application/archive/refs/heads/main.zip",
                     imgPath: "./assets/projects/qapp1.png"
                 },
             ]
         }
     },
+    components: {
+        tags: tag
+    },
     methods: {
         openLinkToGithub: function (index) {
             window.open(this.projects[index].link)
+        },
+        openLinkToFork: function (index) {
+            window.open(this.projects[index].forkLink)
+        },
+        openLinkToZipDownload: function (index) {
+            window.open(this.projects[index].forkLink)
+        },
+        openContactToDiscuss: function (index) {
+            this.$router.push({path:"/contact", query: { title: this.projects[index].title }})
         }
     }
 }

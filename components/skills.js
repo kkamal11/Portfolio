@@ -1,9 +1,11 @@
+import tag from "./tag.js"
+
 export default {
     template: `
     <div>
         <div class="mx-6 lg:mx-10 rounded-2xl hover:bg-sky-50 lg:pt-4  shadow-2xl dark:bg-gray-900 dark:hover:bg-gray-900 dark:shadow-sky-800/50 dark:shadow-lg">
             <h2 class="text-sky-600 text-4xl font-extrabold text-center tracking-widest dark:text-white">My Skillset</h2>
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-0 gap-y-8 md:mx-56 mt-8 rounded-2xl truncate" >
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-0 gap-y-4 md:mx-56 mt-8 rounded-2xl truncate" >
                 <div class="text-center text-gray-50 hover:text-sky-900 rounded-3xl hover:shadow-xl dark:text-gray-900 dark:hover:text-white">
                     <i class="fab fa-python text-blue-900 text-6xl block"></i>
                     <p>Python</p>
@@ -56,23 +58,34 @@ export default {
                     <i class="bi bi-file-earmark-spreadsheet-fill text-green-900 text-6xl block"></i>
                     <p>Spreadsheet-Excel</p>
                 </div>
-                <div class="text-center text-gray-50 hover:text-green-900 rounded-3xl hover:shadow-xl dark:text-gray-900 dark:hover:text-white">
+                <div class="text-center text-gray-50 hover:text-red-600 rounded-3xl hover:shadow-xl dark:text-gray-900 dark:hover:text-white">
                     <i class="fa-brands fa-java text-red-600 text-6xl block""></i>
                     <p>Java</p>
                 </div>
+                <div class="text-center text-gray-50 hover:text-orange-600 rounded-3xl hover:shadow-xl dark:text-gray-900 dark:hover:text-white">
+                    <img width="90px" class="mx-auto mt-2" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Pandas logo">
+                    <p>scikit-learn</p>
+                </div>
+            </div>
+            <div class="py-4 text-center">
+                <span class="text-sm dark:text-white font-medium text-gray-700">Other Familiarities :</span>
+                <tags v-for="(skill, index) in otherSkills" :key="index" class="inline-block">{{skill}}</tags>
             </div>
         </div>
         <hr class="border-dotted border-t-4 border-sky-600 w-1/12 mx-auto mt-12 mb-8 dark:border-white">    
     </div>`,
     data() {
         return {
-            
+            otherSkills: ["git","Streamlit", "Markdown", "Latex", "SQLite", "Redis", "Google Data Studio"]
         }
     },
-    methods: {
-        
+    components: {
+        tags: tag
     },
-    mounted(){
+    methods: {
+
+    },
+    mounted() {
 
     }
 }
