@@ -1,7 +1,11 @@
 import tag from "./tag.js"
+import github_stats from "./github_stats.js"
 export default {
     template: `
     <div>
+         <div class="flex justify-center items-center">
+            <github />
+        </div>
         <div class="text-center my-4 p-6 text-gray-700 dark:text-gray-300">
             <p class="uppercase tracking-widest text-xl font-medium">My Projects and Works</p>
         </div>
@@ -133,7 +137,8 @@ export default {
         }
     },
     components: {
-        tags: tag
+        'tags': tag,
+        'github': github_stats,
     },
     methods: {
         openLinkToGithub: function (index) {
