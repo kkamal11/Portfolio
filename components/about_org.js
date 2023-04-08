@@ -22,7 +22,8 @@ export default {
             </div>
             <div id="name" class="grid items-center justify-center">
                 <div class="p-16 mt-8">
-                    <img width="300px" src="../assets/im/profile.jpg" alt="image" class="rounded-3xl sm:mt-8" />
+                    <!-- <img width="300px" src="../assets/im/profile.jpg" alt="image" class="rounded-3xl sm:mt-8" />-->
+                   <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_9e8yoqkm.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px;"  loop autoplay></lottie-player>
                 </div>
             </div>
         </div>
