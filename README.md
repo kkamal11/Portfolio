@@ -8,3 +8,6 @@ It is developed using following techs:
 - Vuejs
 - Tailwind CSS
 - Vue Router
+
+
+Besides I have used bootstrap and font-awesome icons.
