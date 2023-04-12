@@ -92,6 +92,11 @@ export default {
                     '',
                     'https://coursera.org/share/3701054983df9cf78ea37bcc1a1a051c'
                 ],
+                'Linux Commands & Shell Scripting - Coursera': [
+                    '../assets/certificates/linux.png',
+                    '',
+                    'https://coursera.org/share/a1f0fee03f7eb40117971151c4d84114'
+                ],
                 
             }
         }
