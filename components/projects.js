@@ -42,10 +42,10 @@ export default {
                     </div>
                 </div>
                 <div class="text-center my-3">
-                    <button @click="openLinkToGithub(index)" class="py-2 px-4 my-3 bg-sky-500 text-white rounded-xl hover:bg-sky-600" title="Click to visit the github repository.">Github <i class="bi bi-box-arrow-in-up-right"></i></button>
-                    <button @click="openLinkToFork(index)" class="py-2 px-4 my-3 ml-4 bg-gray-500 text-white rounded-xl hover:bg-gray-600" title="Click to fork this project on github.">Fork <i class="fa fa-code-fork" aria-hidden="true"></i></button>
-                    <a :href="project.zipDownloadLink" download class="py-2 px-4 my-3 ml-4 bg-orange-500 text-white rounded-xl hover:bg-orange-600" title="Click to download the zipped source code.">Code <i class="bi bi-download"></i></a>
-                    <button @click="openContactToDiscuss(index)" class="py-2 px-4 my-3 ml-4 bg-white text-gray-900 rounded-xl hover:bg-gray-100 border-1-green" title="Click to let me know if you want to discuss on this project.">Discuss <i class="bi bi-chat-dots"></i></button>
+                    <button @click="openLinkToGithub(index)" class="py-2 px-4 my-3 bg-sky-500 text-white rounded hover:bg-sky-600" title="Click to visit the github repository.">Github <i class="bi bi-box-arrow-in-up-right"></i></button>
+                    <button @click="openLinkToFork(index)" class="py-2 px-4 my-3 ml-4 bg-gray-500 text-white rounded hover:bg-gray-600" title="Click to fork this project on github.">Fork <i class="fa fa-code-fork" aria-hidden="true"></i></button>
+                    <a :href="project.zipDownloadLink" download class="py-2 px-4 my-3 ml-4 bg-orange-500 text-white rounded hover:bg-orange-600" title="Click to download the zipped source code.">Code <i class="bi bi-download"></i></a>
+                    <button @click="openContactToDiscuss(index)" class="py-2 px-4 my-3 ml-4 bg-white text-gray-900 rounded hover:bg-gray-100 border-1-green" title="Click to let me know if you want to discuss on this project.">Discuss <i class="bi bi-chat-dots"></i></button>
                 </div>
             </div> 
         </div>
