@@ -12,9 +12,9 @@ export default {
                     <p class="text-xl py-1">In College</p>
                     <div class="pt-8 text-lg">
                         <p class="font-semibold">
-                            <span class="hover:underline underline-offset-4 hover:text-green-600"><a href="https://github.com/kkamal11" target="_blank">Github </a></span> | 
-                            <span class="hover:underline underline-offset-4 hover:text-green-600"><a href="https://www.linkedin.com/in/kamal-kishor-chaurasiya-a22866192" target="_blank">LinkedIn</a></span> | 
-                            <span class="hover:underline underline-offset-4 hover:text-green-600"><a href="mailto:reachmeviamaill@gmail.com">Gmail</a></span>
+                            <span class="hover:underline underline-offset-4 hover:text-green-600"><a href="https://github.com/kkamal11" target="_blank">Github <i class="bi bi-github"></i></a></span> | 
+                            <span class="hover:underline underline-offset-4 hover:text-green-600"><a href="https://www.linkedin.com/in/kamal-kishor-chaurasiya-a22866192" target="_blank">LinkedIn <i class="bi bi-linkedin"></i></a></span> | 
+                            <span class="hover:underline underline-offset-4 hover:text-green-600"><a href="mailto:reachmeviamaill@gmail.com">Gmail <i class="bi bi-google"></i></a></span>
                         </p>
                         <p @click="showMoreDetailPopUp" class="btn-box-shadow mx-6 sm:mx-0 bg-sky-600 p-3 uppercase my-4 text-white font-medium hover:bg-sky-700 cursor-pointer">Read more...</p>
                     </div>
