@@ -41,7 +41,7 @@ export default {
                     <div class="mx-auto w-52 my-3 h-24 rounded-full" >
                         <img width="100px" class="mx-auto rounded-full" src="./assets/im/ml.jpg" alt="Image">
                     </div>
-                    <h2 class="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">Data Science & ML</h2>
+                    <h2 class="text-3xl font-semibold mb-6 text-gray-900 dark:text-white animate-character">Data Science & ML</h2>
                     <div>
                     <p class="my-4">Some text text</p>
                     <div class="sky-text">
@@ -72,7 +72,7 @@ export default {
                     <div class="mx-auto w-52 my-3 h-24 rounded-full" >
                         <img width="100px" class="mx-auto rounded-full" src="./assets/im/web.jpg" alt="Image">
                     </div>
-                    <h2 class="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">&lt;Web Development/&gt;</h2>
+                    <h2 class="text-3xl font-semibold mb-6 text-gray-900 dark:text-white animate-character">&lt;Web Development/&gt;</h2>
                     <div>
                         <p class="my-4">Some text</p>
                         <div class="sky-text">
@@ -105,7 +105,7 @@ export default {
                     <div class="mx-auto w-52 my-3 h-24 rounded-full" >
                         <img width="95px" class="mx-auto rounded-full" src="./assets/im/other.jpg" alt="Image">
                     </div>
-                    <h2 class="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">Some More...&#128521;</h2>
+                    <h2 class="text-3xl font-semibold mb-6 text-gray-900 dark:text-white"><span class="animate-character">Some More...</span>&#128521;</h2>
                     <div>
                     <p class="my-4">Some random other text</p>
                     <div class="sky-text">
