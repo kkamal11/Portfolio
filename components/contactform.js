@@ -29,7 +29,7 @@ const form = {
                         <button v-if="showErrorMessage" disabled class="bg-red-700 p-2 my-3 shadow-lg shadow-sky-800/50 text-white rounded-xl"  :class="{'cursor-not-allowed': submitButtonDisabled }">Oops... An error occured.</button>
                         <button v-if="showNewMessage || showErrorMessage" v-on:click="reload" id="btn2" class="p-2 my-3 bg-yellow-400 shadow-lg shadow-sky-800/50 text-white rounded-xl hover:bg-yellow-600">Send Another <i class="bi bi-chat-left-heart"></i></button>
                         <div class="flex items-center justify-center">
-                            <button v-on:click="submitMessage" v-if="!messageBeingSent && !showNewMessage && !showErrorMessage" :disabled="submitButtonDisabled" id="btn" class="py-2 px-4 my-3 bg-sky-500 text-white rounded hover:bg-sky-600" :class="{'hover:bg-sky-600': !submitButtonDisabled, 'cursor-not-allowed': submitButtonDisabled }" title="Please fill all the required fields.">Send... <i class="bi bi-chat-left-heart"></i></button>
+                            <button v-on:click="submitMessage" v-if="!messageBeingSent && !showNewMessage && !showErrorMessage" :disabled="submitButtonDisabled" id="btn" class="py-2 px-4 my-3 bg-sky-500 text-white rounded hover:bg-sky-600" :class="{'hover:bg-sky-600': !submitButtonDisabled, 'cursor-not-allowed': submitButtonDisabled }" :title="submitButtonDisabled ? 'Please fill all the required fields.' : ''">Send... <i class="bi bi-chat-left-heart"></i></button>
                             <div v-if="messageBeingSent" class="loader"></div>
                         </div>
                     </div>
