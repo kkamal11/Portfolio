@@ -10,7 +10,7 @@ export default {
                     <div class="content text-white">
                         <h1 class="text-2xl mb-2 font-medium">{{key}}</h1>
                         <p class="text-justify">{{value[1]}}</p>
-                        <a :href="value[2]" target = "_blank" class="inline-block py-2 px-4 my-3 bg-sky-600 shadow-lg shadow-blue-800/50 text-white rounded-xl hover:bg-sky-700">Verify Here</a>
+                        <a :href="value[2]" target="_blank" class="inline-block py-2 px-4 my-3 bg-sky-600 shadow-lg shadow-blue-800/50 text-white hover:bg-green-600">Verify Here</a>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@ export default {
                         <p class="">
                             {{value[1]}}
                         </p>
-                        <a :href="value[2]" target="_blank" class="inline-block py-2 px-4 my-3 bg-sky-600 shadow-lg shadow-blue-800/50 text-white rounded-xl hover:bg-sky-700">Verify Here</a>
+                        <a :href="value[2]" target="_blank" class="inline-block py-2 px-4 my-3 bg-sky-600 shadow-lg shadow-blue-800/50 text-white hover:bg-sky-700">Verify Here</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@ export default {
             }
         }
     },
-        computed:{
+    computed:{
             certiCount: function(){
                 return Object.keys(this.otherCertis).length;
             }
