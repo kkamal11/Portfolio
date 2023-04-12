@@ -10,4 +10,4 @@ It is developed using following techs:
 - Vue Router
 
 
-Besides I have used bootstrap and font-awesome icons.
+Besides I have used Vue-Typer, bootstrap and font-awesome icons.
