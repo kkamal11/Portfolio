@@ -84,7 +84,7 @@ const things = {
             </a> 
             -->
         </div>
-        <router-link to="/projects" class="px-4 py-2 text-gray-700 font-medium border-2 rounded-md btn-bg-color hover:text-white dark:text-white">See more</router-link>
+        <router-link to="/projects" class="px-5 py-3 text-gray-700 text-lg font-medium border-2 rounded-sm btn-bg-color hover:text-white dark:text-white">See more</router-link>
         <hr class=" border-dotted border-t-4 border-indigo-500 w-1/12 mx-auto my-12 dark:border-white"> 
     </div> 
     </div>`,
