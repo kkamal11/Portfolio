@@ -12,11 +12,11 @@ const head = {
               <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-normal">
                   <router-link v-for="[key,value] in Object.entries(links)" :to="value" exact :key="key" 
-				  class="hover-underline-animation block py-2 pl-3 pr-4 border-b border-gray-100 md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+				  class="hover:underline underline-offset-4 block py-2 pl-3 pr-4 border-b border-gray-100 md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
 				  >
                     {{key}}
                   </router-link>
-				  <a onclick="alert('Coming soon')" target="_blank" class="hover-underline-animation cursor-pointer block py-2 pl-3 pr-4 border-b border-gray-100 md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+				  <a onclick="alert('Coming soon')" target="_blank" class="hover:underline underline-offset-4 cursor-pointer block py-2 pl-3 pr-4 border-b border-gray-100 md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                     Blog
                   </a>
                   <a @click="changeMode" class="block py-2 pl-3 pr-4 md:border-0  md:p-0 cursor-pointer border-b border-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" >&nbsp;
@@ -66,7 +66,6 @@ const head = {
 		//used to get derived state of variable
 	},
 	mounted() {
-		// On page load or when changing themes, best to add inline in `head` to avoid FOUC
 		if (localStorage.getItem('theme') === 'dark' || ((localStorage.getItem("theme") === 'light') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
 			document.documentElement.classList.add('dark');
 			this.isDark = true;
