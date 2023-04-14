@@ -20,7 +20,7 @@ export default {
                     <tags class="inline-block mt-3" v-for="tech in project.techUsed" :key="tech">{{tech}}</tags>
                 </div>
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 mx-4 md:mx-8">
-                    <div class="flex items-center justify-center">
+                    <div v-if="index % 2 === 0" class="flex items-center justify-center">
                         <img class="rounded-lg" :src="project.imgPath">
                     </div>
                     <div>
@@ -39,6 +39,9 @@ export default {
                                 <p v-if="project.Database.length > 0" class="py-3 font-bold text-medium  text-gray-700 dark:text-gray-300"">Database: <span class="font-normal text-base dark:text-cyan-400">{{project.Database}}</span></p>
                             </p>
                         </div>
+                    </div>
+                    <div v-if="index % 2 != 0" class="flex items-center justify-center">
+                        <img class="rounded-lg" :src="project.imgPath">
                     </div>
                 </div>
                 <div class="text-center my-3">
