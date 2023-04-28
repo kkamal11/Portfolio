@@ -10,7 +10,7 @@ export default {
             <p class="uppercase tracking-widest text-xl font-medium">My Projects and Works</p>
         </div>
         <div class="mx-4 md:mx-12 sm:justify-center mb-8">
-            <div v-for="(project,index) in projects" class="mb-12 rounded-3xl bg-gray-200 dark:bg-gray-800 border-b-2 border-gray-300 dark:border-b-gray-800 hover:border-b-pink-600 dark:hover:border-b-pink-600">
+            <div v-for="(project,index) in projects" class="mb-12 rounded-lg bg-gray-200 dark:bg-gray-800 border-b-2 border-gray-300 dark:border-b-gray-800 hover:border-b-pink-600 dark:hover:border-b-pink-600">
                 <div class="text-gray-700 text-center dark:text-gray-300 py-8">
                     <div>
                         <p class="font-bold text-2xl" :class="{'pb-4':!project.id}" >{{ project.title }}</p>
