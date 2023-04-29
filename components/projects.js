@@ -3,7 +3,7 @@ import github_stats from "./github_stats.js"
 export default {
     template: `
     <div>
-         <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center">
             <github />
         </div>
         <div class="text-center my-4 p-6 text-gray-700 dark:text-gray-300">
@@ -14,10 +14,13 @@ export default {
                 <div class="text-gray-700 text-center dark:text-gray-300 py-8">
                     <div>
                         <p class="font-bold text-2xl" :class="{'pb-4':!project.id}" >{{ project.title }}</p>
-                        <p v-if="project.id" class="text-xs pb-4">{{project.btm_text}}</p>
+                        <p v-if="project.id" class="text-xs mb-3">{{project.btm_text}}</p>
                     </div>
-                    <hr>
-                    <tags class="inline-block mt-3" v-for="tech in project.techUsed" :key="tech">{{tech}}</tags>
+                    <hr class="border-t-2 border-gray-400" />
+                    <div class="py-2 my-2">
+                        <tags class="inline-block" v-for="tech in project.techUsed" :key="tech">{{tech}}</tags>
+                    </div>
+                    <hr class="border-t-2 border-gray-400" />
                 </div>
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 mx-4 md:mx-8">
                     <div v-if="index % 2 === 0" class="flex items-center justify-center">
