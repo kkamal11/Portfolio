@@ -35,7 +35,7 @@ const things = {
         <!--PROJECTS-->
         <div class="mx-8 lg:m-14">
         <h1 class="text-4xl font-bold text-gray-700 my-6 tracking-wider dark:text-white ">Latest projects</h1>
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-10 mb-4 md:mx-12 overflow-auto">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-10 mb-8 md:mx-12 overflow-auto">
             <a @mouseover="showOnHover('one')" @mouseout="one=false" href="https://github.com/kkamal11/Quantified_Self_App_v2.0" target="_blank" id="proj-card" class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-sky-700" >
                 <h2 class="mt-16 text-2xl text-sky-700 font-medium tracking-wider dark:text-fuchsia-50">Quantified Self App</h2>
                 <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">v2.0 Advanced</p>
@@ -84,8 +84,8 @@ const things = {
             </a> 
             -->
         </div>
-        <router-link to="/projects" class="px-5 py-3 text-gray-700 text-lg font-medium border-2 rounded-sm btn-bg-color hover:text-white dark:text-white">See more</router-link>
-        <hr class=" border-dotted border-t-4 border-indigo-500 w-1/12 mx-auto my-12 dark:border-white"> 
+        <router-link to="/projects" class="uppercase px-6 py-4 text-gray-700 text-lg font-medium border-2 rounded-sm btn-bg-color hover:text-white dark:text-white">See more projects</router-link>
+        <hr class="border-dotted border-t-4 border-indigo-500 w-1/12 mx-auto my-12 dark:border-white"> 
     </div> 
     </div>`,
     data: function () {
