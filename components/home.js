@@ -18,12 +18,12 @@ const home = {
                 </vue-typer>
             </div>
             
-            <div class="grid justify-items-center text-gray-100 py-10 md:py-16">
+            <div class="grid justify-items-center text-gray-100 py-10 md:py-14">
                 <code>
-                    <p class="mx-2 text-center md:mx-0 md:text-xl">I create simple yet elegant, efficient and highly interactive web apps.</p>
-                    <p class="md:text-xl text-center">I am also equally passionate about data science and ML.</p>
+                    <p class="mx-2 text-center md:mx-0">I create simple yet elegant, efficient and highly interactive web apps.</p>
+                    <p class="text-center">I am also equally passionate about data science and ML.</p>
                 </code>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 pt-3.5 text-lg ">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 pt-3.5 text-lg my-8">
                     <button @click="showResume" v-if="!clickedHiring" class="btn-fill btn-box-shadow2 border-2 p-2 px-4 rounded-sm hover:border-sky-900 hover:text-sky-900 hover:underline hover:underline-offset-4 decoration-amber-400">RESUME</button>
                     <button v-if="!clickedHiring" v-on:click="showEmail" class="btn-fill btn-box-shadow2 border-2 rounded-sm hover:underline-offset-4 decoration-amber-400 hover:border-sky-900 hover:text-sky-900 hover:underline">HIRE ME</button>
                     <a v-if="!clickedHiring" href="https://github.com/kkamal11" target="_blank" class="btn-fill btn-box-shadow2 hidden md:block border-2 p-2 px-4 rounded-sm hover:border-sky-900 hover:text-sky-900 hover:underline hover:underline-offset-4 decoration-amber-400">GITHUB</a>
