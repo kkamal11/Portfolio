@@ -67,6 +67,7 @@ export default {
                     <p>scikit-learn</p>
                 </div>
             </div>
+            <hr class="border border-t-1">
             <div class="py-4 text-center">
                 <span class="text-sm dark:text-white font-medium text-gray-700">Other Familiarities :</span>
                 <tags v-for="(skill, index) in otherSkills" :key="index" class="inline-block">{{skill}}</tags>
