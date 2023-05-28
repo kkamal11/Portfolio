@@ -23,7 +23,7 @@ export default {
         return {
             isDark: false,
             showLoader: true,
-            id:null
+            setTimeOutId:null
         }
     },
     methods: {
@@ -37,12 +37,12 @@ export default {
         },
         showLoaderFunc() {
             this.showLoader = !this.showLoader;
-            clearTimeout(this.id);
+            clearTimeout(this.setTimeOutId);
         }
     },
     mounted() {
         this.checkForDarkMode();
-        this.id = setTimeout(this.showLoaderFunc, 2000);
+        this.setTimeOutId = setTimeout(this.showLoaderFunc, 3000);
     },
 
 
