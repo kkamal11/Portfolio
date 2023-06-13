@@ -426,3 +426,11 @@ nav,
   vertical-align: middle;
   font-size: 30px;
 }
+
+
+/* Codechef-Hackerrank logo  */
+.logo{
+  display: inline-block;
+  width: 25px;
+  margin-right: 2px;
+}
