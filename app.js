@@ -20,12 +20,21 @@ const app = new Vue({
 
 ////////////Scroll to Top setting////////////////////
 let scrollButton = document.getElementById("scrollBtn");
+
+scrollButton.addEventListener("mouseover", (event) => {
+    let backToTopElem = document.getElementById("back-top");
+    backToTopElem.classList.remove("hidden")
+})
+scrollButton.addEventListener("mouseout", () => {
+    let backToTopElem = document.getElementById("back-top");
+    backToTopElem.classList.add("hidden")
+})
 scrollButton.addEventListener("click", () => {
-   // document.body.scrollTop = 0;
+    // document.body.scrollTop = 0;
     // document.documentElement.scrollTop = 0;
     window.scrollTo({
         top: 0,
-        behavior:'smooth'
+        behavior: 'smooth'
     })
 })
 window.addEventListener("scroll", () => {
@@ -36,5 +45,3 @@ window.addEventListener("scroll", () => {
         scrollButton.classList.add("hidden");
     }
 })
-
-
