@@ -13,7 +13,7 @@ const footer = {
             <div class="flex items-center justify-center">
                 <div class="mt-2 mb-8 md:px-36 sm:px-14 text-gray-700 grid md:grid-cols-3 gap-2">
                     <div class="bg-green-600 px-2 py-1 font-semibold text-white rounded-sm hover:bg-green-700 text-center">
-                        <a href="#" class="inline-block" target="_blank"><img src="../assets/hackerrank.png" alt="image" class="logo" />Hackerrank</a>
+                        <a href="https://www.hackerrank.com/kishorkamal7091" class="inline-block" target="_blank"><img src="../assets/hackerrank.png" alt="image" class="logo" />Hackerrank</a>
                     </div>
                     <div class="bg-gray-600 px-2 py-1 font-semibold text-white rounded-sm hover:bg-gray-700 text-center">
                         <a href="https://www.codechef.com/users/kamalk1" class="inline-block" target="_blank"><img src="../assets/codechef.png" alt="image" class="logo" />CodeChef</a>
