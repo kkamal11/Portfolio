@@ -77,7 +77,7 @@ export default {
     </div>`,
     data() {
         return {
-            otherSkills: ["git","Streamlit", "Markdown", "Latex", "SQLite", "Redis", "Google Data Studio"]
+            otherSkills: ["PL/SQL","git","Streamlit", "Markdown", "Latex", "SQLite", "Redis", "Google Data Studio"]
         }
     },
     components: {
