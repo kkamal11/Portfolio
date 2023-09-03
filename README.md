@@ -1,7 +1,7 @@
 # Portfolio
 This is my portfolio **[website↗️](https://kishorkamal.netlify.app/)**. 
 
-It is developed using following techs:
+It is developed using the following techs:
 - HTML
 - CSS
 - JavaScript 
@@ -10,4 +10,4 @@ It is developed using following techs:
 - Vue Router
 
 
-Besides I have used Vue-Typer, bootstrap and font-awesome icons.
+Besides, I have used Vue-Typer, bootstrap and font-awesome icons.
