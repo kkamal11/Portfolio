@@ -26,10 +26,7 @@ const footer = {
             <hr class="mb-4 border-gray-300 sm:mx-auto dark:border-gray-700 " >
             <div class="grid sm:grid-cols-3 items-center">
                 <div class="mb-8 sm:mb-0 md:mx-auto text-sm text-gray-500 text-center dark:text-gray-400">
-                    <p>Last Update: Jan, 2023</p>
-                    <div class="my-2">
-                        <img src="https://visitcount.itsvg.in/api?id=kkamal11&label=Profile%20Views&color=6&icon=0&pretty=true" />
-                    </div>
+                    <p>Last Update: Sep 2023</p>
                 </div>
                 <div class="mb-8 sm:mb-0 md:mx-auto text-sm text-gray-500 text-center dark:text-gray-400">&copy; 2023 Kamal Kishor Chaurasiya</div>
                 <div>
@@ -46,8 +43,13 @@ const footer = {
                 "About": "/about",
                 "Contact": "/contact",
             },
+            lastModifiedTime: null,
         }
-    }
+    },
+    methods: {
+    },
+    mounted() {
+    },
 };
 
 export default footer;
