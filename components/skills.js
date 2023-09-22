@@ -70,14 +70,14 @@ export default {
             <hr class="border border-t-1">
             <div class="py-4 text-center">
                 <span class="text-sm dark:text-white font-medium text-gray-700">Other Familiarities :</span>
-                <tags v-for="(skill, index) in otherSkills" :key="index" class="inline-block">{{skill}}</tags>
+                <tags v-for="(skill, index) in otherSkills" :key="index" class="inline-block uppercase font-semibold">{{skill}}</tags>
             </div>
         </div>
         <hr class="border-dotted border-t-4 border-sky-600 w-1/12 mx-auto mt-12 mb-8 dark:border-white">    
     </div>`,
     data() {
         return {
-            otherSkills: ["PL/SQL","git","Streamlit", "Markdown", "Latex", "SQLite", "Redis", "Google Data Studio"]
+            otherSkills: ["PL/SQL", "XML", "JSON", "git", "Streamlit", "Markdown", "Latex", "SQLite", "Redis", "Google Data Studio"]
         }
     },
     components: {
