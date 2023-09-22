@@ -51,7 +51,7 @@ export default {
                                 <li class="font-bold tracking-wide underline underline-offset-4">Senior Secondary <i class='fas fa-school' style='font-size:16px;color:yellow'></i></li>
                                 <li>MS Memorial Public School</li>
                                 <li class="mt-2 font-bold tracking-wide underline underline-offset-4">Undergraduate <i class='fas fa-graduation-cap' style='font-size:16px;'></i></li>
-                                <li>National Institute of Technology Kurukshetra, <i>B.Tech, 2019-23<span class="text-base font-normal float-right">CGPA: 8.40</span></i></li>
+                                <li>National Institute of Technology Kurukshetra, <i>B.Tech, 2019-23<span class="text-base font-normal float-right">CGPA: 8.46</span></i></li>
                                 <li>Indian Institute of Technology Madras, <i>B.Sc, 2021-Present<span class="text-base font-normal float-right">CGPA: 9.40</span></i></li>
                             </ul>
                         </div>
