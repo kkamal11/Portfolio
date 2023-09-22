@@ -2,11 +2,11 @@ var VueTyper = window.VueTyper.VueTyper
 const home = {
     template: `
     <div id="home">
-        <div class="dark:text-gray-100 py-20 ">
-            <div class="grid justify-items-center lg:text-3xl lg:font-medium">
-                <p class="text-rose-100 rounded-md p-2 md:mb-2 hidden md:block">"Hello World!" I am Kamal.&#128075;</p>
+        <div class="dark:text-gray-100 py-20 md:pt-32 md:pb-20 ">
+            <div class="grid justify-items-center">
+                <p class="text-rose-100 rounded-md p-2 md:my-2 hidden md:block md:font-extrabold md:text-4xl lg:text-6xl">"Hello World!", I am Kamal.</p>
             
-                <vue-typer class="hidden h-10 lg:block text-center" 
+                <vue-typer class="hidden h-10 lg:block text-center md:text-3xl font-semibold" 
                 :text="fullTextArray" :repeat="Infinity"
                 erase-style='backspace' :type-delay='100'
                 :erase-delay='50' >
@@ -20,21 +20,18 @@ const home = {
             
             <div class="grid justify-items-center text-gray-100 py-10 md:py-14">
                 <code>
-                    <p class="mx-2 text-center md:mx-0">I create simple yet elegant, efficient and highly interactive web apps.</p>
-                    <p class="text-center">I am also equally passionate about data science and ML.</p>
+                    <p class="mx-2 text-center md:mx-0 sm:hidden">I create simple yet elegant, efficient and highly interactive web apps.</p>
+                    <p class="text-center sm:hidden">I am also equally passionate about data science and ML.</p>
                 </code>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 pt-3.5 text-lg my-8">
-                    <button @click="showResume" v-if="!clickedHiring" class="btn-fill btn-box-shadow2 border-2 p-2 px-4 rounded-sm hover:border-sky-900 hover:text-sky-900 hover:underline hover:underline-offset-4 decoration-amber-400">RESUME</button>
-                    <button v-if="!clickedHiring" v-on:click="showEmail" class="btn-fill btn-box-shadow2 border-2 rounded-sm hover:underline-offset-4 decoration-amber-400 hover:border-sky-900 hover:text-sky-900 hover:underline">HIRE ME</button>
-                    <a v-if="!clickedHiring" href="https://github.com/kkamal11" target="_blank" class="btn-fill btn-box-shadow2 hidden md:block border-2 p-2 px-4 rounded-sm hover:border-sky-900 hover:text-sky-900 hover:underline hover:underline-offset-4 decoration-amber-400">GITHUB</a>
-                    <div v-if="clickedHiring" class="grid-cols-2 md:col-span-3 p-2 border-2 rounded-xl hover:border-sky-900 text-white md:text-lg text-center">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 pt-3.5 text-lg mb-6 font-semibold">
+                    <button @click="showResume" v-if="!clickedHiring" class="btn-fill btn-box-shadow2-orange border-2 p-2 px-4 lg:py-3 lg:px-5 rounded-sm hover:border-sky-900 hover:text-sky-900 hover:underline hover:underline-offset-4 decoration-amber-400">RESUME</button>
+                    <button v-if="!clickedHiring" v-on:click="showEmail" class="btn-fill btn-box-shadow2-white border-2 rounded-sm hover:underline-offset-4 decoration-amber-400 hover:border-sky-900 hover:text-sky-900 hover:underline">HIRE ME</button>
+                    <a v-if="!clickedHiring" href="https://github.com/kkamal11" target="_blank" class="btn-fill btn-box-shadow2 hidden md:block border-2 p-2 px-4 lg:py-3 lg:px-5 rounded-sm hover:border-sky-900 hover:text-sky-900 hover:underline hover:underline-offset-4 decoration-amber-400">GITHUB</a>
+                    <div v-if="clickedHiring" class="grid-cols-2 md:col-span-3 p-2 border-2 rounded hover:border-sky-900 text-white md:text-lg text-center">
                         <span><router-link :to="Contact" class="underline underline-offset-4 hover:decoration-amber-400">Contact Here&nbsp;</router-link>or drop an email at <span class="select-all underline underline-offset-4 hover:decoration-amber-400">reachmeviamaill@gmail.com</span></span>&nbsp;
                         <button @click="cancelPopUp" class="hover:text-red-600 text-2xl"><i class="bi bi-x-lg"></i></button>
                     </div>
                 </div>
-                <!--
-                <code class="pt-4">Mathematics + Statistics + Computer Science = Anything and Everithing. </code>
-                -->
             </div>
             
         </div>
