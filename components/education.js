@@ -22,7 +22,7 @@ export default {
                     <div class="my-2 text-gray-800">
                         <p><i class='fas fa-graduation-cap' style='font-size:16px;'></i> Bachelor of Technology (B.Tech)</p>
                         <p><i class="bi bi-calendar-event" style='font-size:16px;'></i> Aug 2019 - June 2023<p>
-                        <p><i class="bi bi-book-fill" style='font-size:16px;'></i> Grade: <span class="italic">8.44 CGPA</span></p>
+                        <p><i class="bi bi-book-fill" style='font-size:16px;'></i> Grade: <span class="italic">8.46 CGPA</span></p>
                     </div>
                 </div>
             </div>
