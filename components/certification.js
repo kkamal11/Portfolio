@@ -1,7 +1,7 @@
 export default {
     template: `
     <div class="hidden md:block mt-4 py-4 lg:px-12 bg-black">
-        <H1 class="text-white text-center dark:text-gray-300 font-bold text-4xl tracking-wider my-4">Certifications</H1>
+        <h1 id="certis" class="text-white text-center dark:text-gray-300 font-bold text-4xl tracking-wider my-4">Certifications</h1>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 text-center">
             <div id="im" v-for="[key,value] in Object.entries(top3Certis)" class="container">
