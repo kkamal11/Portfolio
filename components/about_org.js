@@ -9,7 +9,7 @@ export default {
             <div id="Photo" class="grid items-center justify-center">
                 <div class="py-10 md:pt-32 text-center text-gray-800 dark:text-gray-300">
                     <p class= "font-semibold text-3xl uppercase">Kamal Kishor Chaurasiya</p>
-                    <p class="text-xl py-1">In College</p>
+                    <p class="text-xl py-1">Associate Consultant at <span class="text-red-600 font-bold text-xl">Oracle</span></p>
                     <div class="pt-8 text-lg">
                         <p class="font-semibold">
                             <span class="hover:underline underline-offset-4 hover:text-green-600"><a href="https://github.com/kkamal11" target="_blank">Github <i class="bi bi-github"></i></a></span> | 
@@ -158,7 +158,7 @@ export default {
         'certificates-comp': certification,
         'about': about,
         'education': education,
-        'experience-comp':experience,
+        'experience-comp': experience,
     },
     methods: {
         changeSlide: function () {

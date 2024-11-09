@@ -66,6 +66,10 @@ export default {
                     <img width="90px" class="mx-auto mt-2" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Pandas logo">
                     <p>scikit-learn</p>
                 </div>
+                    <div class="text-center text-gray-50 hover:text-blue-900 rounded-3xl hover:shadow-xl dark:text-gray-900 dark:hover:text-white">
+                    <img width="100px" class="mx-auto" src="./assets/oracle_db.jpg" alt="oracle db logo">
+                    <p>Oracle Database</p>
+                </div>
             </div>
             <hr class="border border-t-1">
             <div class="py-4 text-center">
