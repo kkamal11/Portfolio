@@ -15,6 +15,7 @@ export default {
                     <div>
                         <p class="font-bold text-2xl" :class="{'pb-4':!project.id}" >{{ project.title }}</p>
                         <p v-if="project.id" class="text-xs mb-3">{{project.btm_text}}</p>
+                        <div v-html="project.ext_button_html" v-if="project.has_ext_button" class="mb-3 text-base text-center"></div>
                     </div>
                     <hr class="border-t-2 border-gray-400" />
                     <div class="py-2 my-2">
@@ -64,7 +65,35 @@ export default {
         return {
             projects: [
                 {
-                    title: "Exploratory Data Analysis (EDA) on IPL dataset",
+                    title: "Recipe for Rating: Predict Food Ratings using ML",
+                    btm_text: "A Machine Learning Project to Predict Food Ratings for a restaurant",
+                    has_ext_button: true,
+                    ext_button_html: `
+                                    <a class="inline-block" href="https://nbviewer.org/github/kkamal11/Recipe-for-Rating-Predict-Food-Ratings-using-ML/blob/main/21f2000804-notebook-t12024.ipynb" target="_blank">
+                                        <img src="https://img.shields.io/badge/Open%20in-Nbviewer-blue" alt="Open in Nbviewer" />
+                                    </a>
+                                    <a class="inline-block" href="https://github.com/kkamal11/Recipe-for-Rating-Predict-Food-Ratings-using-ML/blob/main/21f2000804-notebook-t12024.ipynb" target="_blank">
+                                        <img src="https://img.shields.io/badge/Open%20in-Google%20Colab-blue?logo=googlecolab" alt="Open in Google Colab" />
+                                    </a>`,
+                    id: true,
+                    description: "",
+                    techUsed: ["Python", "Numpy", "Pandas", "Seaborn", "Matplotlib", "Scikit-learn"],
+                    Database: "",
+                    imgPath: "./assets/projects/ml_project.png",
+                    link: "https://github.com/kkamal11/Recipe-for-Rating-Predict-Food-Ratings-using-ML",
+                    forkLink: "https://github.com/kkamal11/Recipe-for-Rating-Predict-Food-Ratings-using-ML/fork",
+                    zipDownloadLink: "https://github.com/kkamal11/Recipe-for-Rating-Predict-Food-Ratings-using-ML/archive/refs/heads/main.zip",
+                    features: [
+                        "Developed machine learning models to predict food ratings using multiple classification algorithms including LogisticRegression, XGBClassifier, BaggingClassifier, Random Forest",
+                        "Preprocessed data using techniques like Label Encoding, StandardScaler, and MinMaxScaler to handle categorical and numerical variables",
+                        "Performed dimensionality reduction using Principal Component Analysis (PCA) to improve computational efficiency.",
+                        "Fine-tuned models using GridSearchCV to optimize hyperparameters and improve accuracy",
+                        "Evaluated model performance with accuracy, F1-score, and confusion matrices",
+                        "Visualized results with matplotlib and seaborn to gain insights into model performance and feature importance",
+                    ]
+                },
+                {
+                    title: "Uncovering IPL Insights: A Data-Driven Analysis of 15 Years of Cricket",
                     btm_text: "A data analysis and visualization project using Python",
                     id: true,
                     description: "In this project, I have done exploratory data analysis on IPL matches where I have tried to answer a few questions and find some insights using the available data. The dataset that I have used in this notebook is IPL (Indian Premier League) dataset posted on Kaggle Datasets sourced from cricsheet. The dataset has information about IPL matches from 2008 to 2022. The following analysis have been covered in the project:",
@@ -73,7 +102,7 @@ export default {
                     imgPath: "./assets/projects/ipl.webp",
                     link: "https://github.com/kkamal11/EDA_on_IPL",
                     forkLink: "https://github.com/kkamal11/EDA_on_IPL/fork",
-                    zipDownloadLink:"https://github.com/kkamal11/EDA_on_IPL/archive/refs/heads/main.zip",
+                    zipDownloadLink: "https://github.com/kkamal11/EDA_on_IPL/archive/refs/heads/main.zip",
                     features: [
                         "Number of matches played till now.",
                         "Number of IPL seasons.",
@@ -114,7 +143,7 @@ export default {
                     id: true,
                     link: "https://github.com/kkamal11/Quantified_Self_App_v2.0",
                     forkLink: "https://github.com/kkamal11/Quantified_Self_App_v2.0/fork",
-                    zipDownloadLink:"https://github.com/kkamal11/Quantified_Self_App_v2.0/archive/refs/heads/main.zip",
+                    zipDownloadLink: "https://github.com/kkamal11/Quantified_Self_App_v2.0/archive/refs/heads/main.zip",
                     imgPath: "./assets/projects/Home.png"
                 },
                 {
@@ -124,7 +153,7 @@ export default {
                     Database: "",
                     link: "https://kkamal11.github.io/To-Do-application-using-VueJs/",
                     forkLink: "https://github.com/kkamal11/To-Do-application-using-VueJs/fork",
-                    zipDownloadLink:"https://github.com/kkamal11/To-Do-application-using-VueJs/archive/refs/heads/main.zip",
+                    zipDownloadLink: "https://github.com/kkamal11/To-Do-application-using-VueJs/archive/refs/heads/main.zip",
                     imgPath: "./assets/projects/ToDo.png"
                 },
                 {
@@ -136,7 +165,7 @@ export default {
                     id: true,
                     link: "https://github.com/kkamal11/Quantified-Self-Application",
                     forkLink: "https://github.com/kkamal11/Quantified-Self-Application/fork",
-                    zipDownloadLink:"https://github.com/kkamal11/Quantified-Self-Application/archive/refs/heads/main.zip",
+                    zipDownloadLink: "https://github.com/kkamal11/Quantified-Self-Application/archive/refs/heads/main.zip",
                     imgPath: "./assets/projects/qapp1.png"
                 },
             ]
@@ -157,7 +186,7 @@ export default {
             window.open(this.projects[index].forkLink)
         },
         openContactToDiscuss: function (index) {
-            this.$router.push({path:"/contact", query: { title: this.projects[index].title }})
+            this.$router.push({ path: "/contact", query: { title: this.projects[index].title } })
         }
     }
 }

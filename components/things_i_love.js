@@ -36,10 +36,22 @@ const things = {
         <div class="mx-8 lg:m-14">
         <h1 class="text-4xl font-bold text-gray-700 my-6 tracking-wider dark:text-white ">Latest projects</h1>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-10 mb-8 md:mx-12 overflow-auto">
+            <a @mouseover="showOnHover('three')" @mouseout="three=false" href="https://github.com/kkamal11/Recipe-for-Rating-Predict-Food-Ratings-using-ML" target="_blank"  class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-sky-700" >
+                <h2 class="mt-16 text-2xl text-sky-700 font-medium tracking-wider dark:text-fuchsia-50">Recipe for Rating: Predict Food Ratings using ML</h2>
+                <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">A ML Project to Predict Food Ratings</p>
+                <div class="mt-4 text-gray-700 dark:text-fuchsia-50">
+                    <p v-if="!three">
+                        A Machine Learning Project to predict food rating for a restaurant using ML algorithms. More details on project section page.
+                    </p>
+                    <p v-if="three" class="font-medium">Built using:</p>
+                    <p v-if="three">Python, Scikit-learn, Numpy, Pandas, Matplotlib, Seaborn</p>
+                    <!--<a v-if="three" href="#" class="p-2 font-medium border-2 rounded-md hover:bg-red-600 hover:text-yellow-500 dark:hover:text-yellow-500">Live Demo</a>-->
+                </div>
+            </a>
             <a @mouseover="showOnHover('one')" @mouseout="one=false" href="https://github.com/kkamal11/Quantified_Self_App_v2.0" target="_blank" id="proj-card" class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-sky-700" >
                 <h2 class="mt-16 text-2xl text-sky-700 font-medium tracking-wider dark:text-fuchsia-50">Quantified Self App</h2>
                 <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">v2.0 Advanced</p>
-                <div class="mt-8 text-gray-700 dark:text-fuchsia-50">
+                <div class="mt-4 text-gray-700 dark:text-fuchsia-50">
                     <p v-if="!one">
                         An advanced and highly interactive self tracking web app equippped with numerous features.
                         Do visit project section or github for more details.
@@ -52,22 +64,10 @@ const things = {
             <a @mouseover="showOnHover('two')" @mouseout="two=false" href="https://github.com/kkamal11/EDA_on_IPL" target="_blank" id="proj-card" class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-sky-700" >
                 <h2 class="mt-16 text-2xl text-sky-700 font-medium my-1 tracking-wider dark:text-fuchsia-50">IPL Exploratory Data Analysis (EDA)</h2>
                 <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">A data analysis project</p>
-                <div class="mt-8 text-gray-700 dark:text-fuchsia-50">
+                <div class="mt-4 text-gray-700 dark:text-fuchsia-50">
                     <p v-if="!two">A Data Analysis and Visualization Project using Python where I have tried to answer a few questions and find some insights. </p>
                     <p v-if="two" class="font-medium">Built using:</p>
                     <p v-if="two">Python, NumPy, Pandas, Seaborn, Matplotlib</p>
-                </div>
-            </a>
-            <a @mouseover="showOnHover('three')" @mouseout="three=false" href="https://github.com/kkamal11/Quantified-Self-Application" target="_blank"  class="border-y-4 block px-2 card1 h-72 bg-gray-100 rounded-xl my-4 hover:bg-yellow-100 dark:bg-gray-800 dark:hover:bg-sky-700" >
-                <h2 class="mt-16 text-2xl text-sky-700 font-medium tracking-wider dark:text-fuchsia-50">Quantified Self App</h2>
-                <p class="text-sky-700 dark:text-fuchsia-50 text-sm text-center">v1.0</p>
-                <div class="mt-8 text-gray-700 dark:text-fuchsia-50">
-                    <p v-if="!three">
-                        A secured CRUD application that facilitates users to make trackers, log data
-                        and see progress using graphs and charts. More details on github and project section.</p>
-                        <p v-if="three" class="font-medium">Built using:</p>
-                        <p v-if="three">HTML/CSS, Python, Flask, SQLite</p>
-                    <!--<a v-if="three" href="#" class="p-2 font-medium border-2 rounded-md hover:bg-red-600 hover:text-yellow-500 dark:hover:text-yellow-500">Live Demo</a>-->
                 </div>
             </a>
             <!--
