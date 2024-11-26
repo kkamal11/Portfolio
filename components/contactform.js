@@ -38,7 +38,7 @@ const form = {
             <div class=" text-center dark:bg-gray-900" >
                 <h2 class="text-2xl font-medium text-center text-gray-700 mt-10 md:mt-40 dark:text-gray-300"><span :class="{'text-white': goToLinkedIn }">Or we can get in touch via LinkedIn</span></h2>
                 <div class="text-center mb-16 md:mx-16 mt-16" >
-                    <a href="https://www.linkedin.com/in/kamal-kishor-chaurasiya-a22866192" v-on:mouseover="goToLinkedIn = true;" v-on:mouseout="goToLinkedIn = false;" target="_blank" class="linkedin-box-shadow text-white px-20 py-6 rounded-sm font-medium text-xl uppercase shadow-lg shadow-sky-800/50 sm-screen-color">LinkedIn <i class="bi bi-send-plus"></i></a>
+                    <a href="https://www.linkedin.com/in/kkamal11" v-on:mouseover="goToLinkedIn = true;" v-on:mouseout="goToLinkedIn = false;" target="_blank" class="linkedin-box-shadow text-white px-20 py-6 rounded-sm font-medium text-xl uppercase shadow-lg shadow-sky-800/50 sm-screen-color">LinkedIn <i class="bi bi-send-plus"></i></a>
                 </div>
             </div>
         </div>
