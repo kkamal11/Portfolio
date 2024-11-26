@@ -5,7 +5,7 @@ const footer = {
             <div class="flex items-center justify-center">
                 <div class="mt-8 md:px-36 sm:px-14">
                     <a href="https://github.com/kkamal11" class="hover:text-gray-500 inline-block mr-6" target="_blank"><i class="bi bi-github" style="font-size:40px"></i></a>
-                    <a href="https://www.linkedin.com/in/kamal-kishor-chaurasiya-a22866192" class=" hover:text-blue-600 inline-block mr-6 text-blue-700" target="_blank"><i class="bi bi-linkedin" style="font-size:40px"></i></a>
+                    <a href="https://www.linkedin.com/in/kkamal11" class=" hover:text-blue-600 inline-block mr-6 text-blue-700" target="_blank"><i class="bi bi-linkedin" style="font-size:40px"></i></a>
                     <a href="mailto:reachmeviamaill@gmail.com" class="hover:text-red-500 inline-block mr-6 text-red-600"><i class="bi bi-google" style="font-size:40px"></i></a>
                     <a href="https://instagram.com/kkamal3?igshid=ZDdkNTZiNTM=" class="hover:text-pink-700 inline-block text-pink-600" target="_blank"><i class="bi bi-instagram" style="font-size:40px"></i></a>
                 </div>
